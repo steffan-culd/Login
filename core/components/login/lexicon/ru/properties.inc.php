@@ -18,12 +18,12 @@ $_lang['prop_forgotpassword.resetresourceid_desc'] = 'Ресурс с напра
 
 /* Login snippet */
 $_lang['prop_login.actionkey_desc'] = 'Переменная REQUEST, которая указывает, какое действие предпринять.';
-$_lang['prop_login.loginkey_desc'] = 'The login action key.';
-$_lang['prop_login.logoutkey_desc'] = 'The logout action key.';
-$_lang['prop_login.loginviaemail_desc'] = 'Enable login via username or email address.';
-$_lang['prop_login.tpltype_desc'] = 'The type of tpls being provided for the login and logout forms.';
-$_lang['prop_login.logintpl_desc'] = 'The login form tpl.';
-$_lang['prop_login.logouttpl_desc'] = 'The logout tpl.';
+$_lang['prop_login.loginkey_desc'] = 'Ключ действия входа.';
+$_lang['prop_login.logoutkey_desc'] = 'Ключ действия выхода.';
+$_lang['prop_login.loginviaemail_desc'] = 'Включение входа через имя пользователя или адрес электронной почты.';
+$_lang['prop_login.tpltype_desc'] = 'Тип tpls, который предоставляется для формы входа и выхода.';
+$_lang['prop_login.logintpl_desc'] = 'Форма входа tpl.';
+$_lang['prop_login.logouttpl_desc'] = 'Выход tpl.';
 $_lang['prop_login.prehooks_desc'] = 'What scripts to fire, if any, before the user is logged in or out. This can be a comma-separated list of hooks, and if the first fails, the proceeding ones will not fire. A hook can also be a Snippet name that will execute that Snippet.';
 $_lang['prop_login.posthooks_desc'] = 'What scripts to fire, if any, after the user has been logged in or out. This can be a comma-separated list of hooks, and if the first fails, the proceeding ones will not fire. A hook can also be a Snippet name that will execute that Snippet.';
 $_lang['prop_login.errtpl_desc'] = 'The error tpl.';

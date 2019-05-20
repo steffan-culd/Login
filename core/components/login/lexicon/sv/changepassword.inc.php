@@ -25,7 +25,7 @@
  * @package login
  * @subpackage lexicon
  */
-$_lang['login.change_password'] = 'Byt lösenord';
+$_lang['login.change_password'] = 'Change Password';
 $_lang['login.password_changed'] = 'Lösenordet har blivit bytt.';
 $_lang['login.password_err'] = 'Felaktigt lösenord.';
 $_lang['login.password_err_change'] = 'Ett fel uppstod när systemet försökte byta lösenord. Vänligen kontrollera fälten.';
