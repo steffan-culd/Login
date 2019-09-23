@@ -113,7 +113,7 @@ class LoginConfirmRegisterController extends LoginController {
      * @param mixed $id Resource ID to redirect to
      */
     public function redirectAfterFailure($id = null) {
-        $errorPage = (is_null($id)) ? $this->getProperty('errorPage', false, 'isset') : $id;
+        $errorPage = (empty($id)) ? $this->getProperty('errorPage', false, 'isset') : $id;
         if (!empty($errorPage)) {
             $url = $this->modx->makeUrl($errorPage,'','','full');
             $this->modx->sendRedirect($url);

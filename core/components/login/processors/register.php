@@ -127,7 +127,7 @@ class LoginRegisterProcessor extends LoginProcessor {
                 && $field != 'passwordconfirm'
                 && $field != $userGroupField
                 && !in_array($field,$excludeExtended)
-               ) {
+            ) {
                 $extended[$field] = $value;
             }
         }
@@ -160,6 +160,7 @@ class LoginRegisterProcessor extends LoginProcessor {
         }
         $this->profile->fromArray($fields);
         $this->profile->set('email',$this->dictionary->get($this->controller->getProperty('emailField','email')));
+        $this->profile->set('fullname',$fields[$this->controller->getProperty('fullnameField','fullname')]);
         $this->user->addOne($this->profile,'Profile');
 
         /* add user groups, if set */
@@ -179,9 +180,10 @@ class LoginRegisterProcessor extends LoginProcessor {
             $allowedFields = is_array($allowedFields) ? $allowedFields : explode(',',$allowedFields);
             $userGroupField = $this->controller->getProperty('usergroupsField','');
             $usernameField = $this->controller->getProperty('usernameField','username');
+            $fullnameField = $this->controller->getProperty('fullnameField','fullname');
             $passwordField = $this->controller->getProperty('passwordField','password');
             $emailField = $this->controller->getProperty('emailField','email');
-            array_push($allowedFields,$usernameField,$passwordField,'password_confirm',$emailField,'class_key');
+            array_push($allowedFields,$usernameField,$fullnameField,$passwordField,'password_confirm',$emailField,'class_key');
             if (!empty($userGroupField)) array_push($allowedFields,$userGroupField);
             $allowedFields = array_unique($allowedFields);
             foreach ($fields as $k => $v) {
@@ -381,6 +383,7 @@ class LoginRegisterProcessor extends LoginProcessor {
                 if ($this->controller->getProperty('redirectUnsetDefaultParams') == false) {
                     $persistParams = array_merge($this->persistParams,array(
                         'username' => $this->user->get('username'),
+                        'fullname' => $this->profile->get('fullname'),
                         'email' => $this->profile->get('email'),
                     ));
                 }
@@ -407,6 +410,7 @@ class LoginRegisterProcessor extends LoginProcessor {
             if ($this->controller->getProperty('redirectUnsetDefaultParams') == false) {
                 $persistParams = array_merge($this->persistParams,array(
                     'username' => $this->user->get('username'),
+                    'fullname' => $this->profile->get('fullname'),
                     'email' => $this->profile->get('email'),
                 ));
             }
