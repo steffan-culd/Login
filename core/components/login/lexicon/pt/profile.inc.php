@@ -20,18 +20,9 @@
  * @package login
  */
 /**
- * Change Password Italian lexicon for Login
+ * Profile English lexicon for Login
  *
  * @package login
  * @subpackage lexicon
  */
-$_lang['login.change_password'] = 'Cambiare la password';
-$_lang['login.password_changed'] = 'Password cambiata.';
-$_lang['login.password_err'] = 'Password errata.';
-$_lang['login.password_err_change'] = 'Si è verificato un errore durante la modifica della password. Prego rivedere le informazioni immesse.';
-$_lang['login.password_invalid_old'] = 'La vecchia password non è valida.';
-$_lang['login.password_new_confirm'] = 'Confermare la nuova password';
-$_lang['login.password_new'] = 'Nuova Password';
-$_lang['login.password_no_match'] = 'Le password non corrispondono.';
-$_lang['login.password_old'] = 'Vecchia password';
-$_lang['login.password_too_short'] = 'La password è troppo corta! Prego immettere una password che contenga almeno [[+length]] caratteri.';
+$_lang['profile'] = 'Perfil';

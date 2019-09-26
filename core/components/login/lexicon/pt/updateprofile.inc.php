@@ -21,25 +21,25 @@
  * @package login
  */
 /**
- * Update Profile Italian lexicon for Login
+ * Update Profile English lexicon for Login
  *
  * @package login
  * @subpackage lexicon
  */
-$_lang['login.address'] = 'Indirizzo';
-$_lang['login.city'] = 'Città';
-$_lang['login.country'] = 'Paese';
-$_lang['login.email'] = 'E-mail';
-$_lang['login.email_taken'] = 'L\'e-mail "[[+email]]" è già in uso. Assicurarsi che non si è ancora registrati, e in caso contrario, si prega di specificare un altro indirizzo e-mail.';
+$_lang['login.address'] = 'Morada';
+$_lang['login.city'] = 'Cidade';
+$_lang['login.country'] = 'País';
+$_lang['login.email'] = 'Email';
+$_lang['login.email_taken'] = 'O email "[[+email]]" já está em utilização. Certifique-se de que não está registado e, se não estiver, especifique outro endereço de email.';
 $_lang['login.fax'] = 'Fax';
 $_lang['login.fullname'] = 'Nome completo';
-$_lang['login.mobilephone'] = 'Cellulare';
-$_lang['login.phone'] = 'Telefono';
-$_lang['login.profile_err_nf'] = 'Profilo non trovato!';
-$_lang['login.profile_err_save'] = 'Si è verificato un errore sconosciuto durante il tentativo di aggiornare il profilo.';
-$_lang['login.profile_updated'] = 'Profilo aggiornato.';
-$_lang['login.state'] = 'Stato';
-$_lang['login.update_profile'] = 'Profile aggiornato';
-$_lang['login.username_err_ae'] = 'Nome utente già in uso. Prego specificarne un altro.';
-$_lang['login.website'] = 'Sito web';
-$_lang['login.zip'] = 'CAP';
+$_lang['login.mobilephone'] = 'Telemóvel';
+$_lang['login.phone'] = 'Telefone';
+$_lang['login.profile_err_nf'] = 'Perfil não encontrado!';
+$_lang['login.profile_err_save'] = 'Ocorreu um erro desconhecido ao tentar atualizar o perfil.';
+$_lang['login.profile_updated'] = 'Perfil atualizado.';
+$_lang['login.state'] = 'Estado';
+$_lang['login.update_profile'] = 'Atualizar Perfil';
+$_lang['login.username_err_ae'] = 'Este nome de utilizador já existe. Por favor, escolha outro.';
+$_lang['login.website'] = 'Website';
+$_lang['login.zip'] = 'Código postal';

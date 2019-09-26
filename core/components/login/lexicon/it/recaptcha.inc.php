@@ -5,7 +5,6 @@
  * @package login
  * @subpackge lexicon
  */
-
 $_lang['recaptcha.empty_answer'] = 'Parole captcha non corrette. Per cortesia controlli la sua risposta e provi di nuovo.';
 $_lang['recaptcha.incorrect'] = 'Il reCAPTCHA non è stato immesso correttamente. Torni indietro e provi di nuovo. [[+error]]';
 $_lang['recaptcha.mailhide_no_mcrypt'] = 'Per utilizzare reCAPTCHA Mailhide, è necessario che il modulo php mcrypt sia installato.';

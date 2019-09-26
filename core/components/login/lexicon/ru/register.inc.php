@@ -26,22 +26,22 @@
  * @package login
  * @subpackage lexicon
  */
-$_lang['register.activation_email_subject'] = 'Спасибо за регистрацию! Пожалуйста, активируйте свой аккаунт.';
+$_lang['register.activation_email_subject'] = 'Спасибо за регистрацию. Пожалуйста, активируйте свой аккаунт!';
 $_lang['register.email'] = 'Адрес электронной почты';
-$_lang['register.email_invalid'] = 'Пожалуйста, введите адрес электронной почты.';
+$_lang['register.email_invalid'] = 'Пожалуйста, введите действительный адрес электронной почты.';
 $_lang['register.email_invalid_domain'] = 'У вашего адреса электронной почты нет правильного доменного имени.';
-$_lang['register.email_no_recipient'] = 'Не указаны получатели.';
+$_lang['register.email_no_recipient'] = 'Не указан получатель для письма.';
 $_lang['register.email_not_sent'] = 'Произошла ошибка при отправке email.';
 $_lang['register.email_taken'] = 'Почтовый ящик "[[+email]]" уже используется. Вы можете либо войти под этой почтой, либо восстановить пароль (если вы его забыли), либо выбрать другой почтовый ящик для регистрации.';
 $_lang['register.field_not_empty'] = 'Это поле должно быть пустым.';
-$_lang['register.field_required'] = 'Это поле требуется.';
+$_lang['register.field_required'] = 'Это поле обязательно к заполнению.';
 $_lang['register.fullname'] = 'Полное имя';
-$_lang['register.math_incorrect'] = 'Неправильный ответ';
-$_lang['register.math_field_nf'] = 'Поле ввода [[+field]] не используется в форме';
-$_lang['register.max_length'] = 'Это поле не может быть длиннее чем [[+length]] символов.';
-$_lang['register.max_value'] = 'Это поле не может быть больше чем [[+value]].';
-$_lang['register.min_length'] = 'Это поле должно быть по крайней мере [[+length]] символов в длину. ';
-$_lang['register.min_value'] = 'Это поле не может быть меньше чем [[+value]].';
+$_lang['register.math_incorrect'] = 'Неправильный ответ!';
+$_lang['register.math_field_nf'] = 'Поле ввода [[+field]] не используется в форме.';
+$_lang['register.max_length'] = 'Это поле не может быть длиннее [[+length]] символов.';
+$_lang['register.max_value'] = 'Это поле не может быть больше, чем [[+value]].';
+$_lang['register.min_length'] = 'Это поле должно содержать не менее [[+length]] символов.';
+$_lang['register.min_value'] = 'Это поле не может быть меньше, чем [[+value]].';
 $_lang['register.not_date'] = 'В это поле надо вводить дату.';
 $_lang['register.not_number'] = 'Значение этого поля должно быть допустимым числом.';
 $_lang['register.not_regexp'] = 'Это поле содержит недопустимое значение.';
@@ -55,8 +55,8 @@ $_lang['register.recaptcha_err_load'] = 'Невозможно загрузить
 $_lang['register.register'] = 'Зарегистрироваться';
 $_lang['register.spam_blocked'] = 'Ваше сообщение было заблокировано спам-фильтром: ';
 $_lang['register.spam_marked'] = ' - отмечено как спам.';
-$_lang['register.use_stronger_password'] = 'Ваш пароль недостаточно надежен. Возможно вам следует сделать его более сложным, добавив числа, буквы разного регистра и спецсимволы. Например: [[+suggestions]]';
-$_lang['register.user_err_save'] = ' Произошла ошибка, при попытке сохранить пользователя.';
+$_lang['register.use_stronger_password'] = 'Ваш пароль недостаточно надежен. Возможно вам следует сделать его более сложным, добавив числа, буквы разного регистра и спецсимволы, или добавьте дополнительные слова к паролю (попробуйте использовать несколько слов в пароле). Например: [[+suggestions]]';
+$_lang['register.user_err_save'] = 'Произошла ошибка при попытке сохранить пользователя.';
 $_lang['register.username'] = 'Имя пользователя';
 $_lang['register.username_taken'] = 'Имя пользователя уже занято. Выберите другое имя.';
-$_lang['register.validation_error_message'] = 'Ошибка проверки данных. Пожалуйста, убедитесь, что вы заполнили форму верно.';
+$_lang['register.validation_error_message'] = 'Произошла ошибка проверки формы. Пожалуйста, проверьте введенные вами данные.';
