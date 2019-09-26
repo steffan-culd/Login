@@ -407,6 +407,7 @@ class LoginRegisterProcessor extends LoginProcessor {
          * GET params `username` and `email` for you to use */
         $submittedResourceId = $this->controller->getProperty('submittedResourceId','');
         if (!empty($submittedResourceId)) {
+			$persistParams = $this->persistParams;
             if ($this->controller->getProperty('redirectUnsetDefaultParams') == false) {
                 $persistParams = array_merge($this->persistParams,array(
                     'username' => $this->user->get('username'),
