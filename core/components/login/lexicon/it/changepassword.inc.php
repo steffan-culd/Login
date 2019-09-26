@@ -28,10 +28,10 @@
 $_lang['login.change_password'] = 'Cambiare la password';
 $_lang['login.password_changed'] = 'Password cambiata.';
 $_lang['login.password_err'] = 'Password errata.';
-$_lang['login.password_err_change'] = ' Si è verificato un errore durante la modifica della password. Prego rivedere le informazioni immesse.';
+$_lang['login.password_err_change'] = 'Si è verificato un errore durante la modifica della password. Prego rivedere le informazioni immesse.';
 $_lang['login.password_invalid_old'] = 'Invalidare la vecchia password.';
 $_lang['login.password_new_confirm'] = 'Confermare la nuova password';
 $_lang['login.password_new'] = 'Nuova Password';
 $_lang['login.password_no_match'] = 'La password non corrisponde.';
 $_lang['login.password_old'] = 'Vecchia password';
-$_lang['login.password_too_short'] = 'La password è troppo breve! Prego immettere una password che contiene almeno [[+length]] caratteri.';
+$_lang['login.password_too_short'] = 'La password è troppo corta! Prego immettere una password che contenga almeno [[+length]] caratteri.';
