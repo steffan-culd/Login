@@ -31,7 +31,7 @@ $_lang['login.forgot_password'] = 'Wachtwoord vergeten';
 $_lang['login.forgot_password_email_subject'] = 'Nieuw wachtwoord e-mail';
 $_lang['login.forgot_password_email_text'] = '<p>Hallo [[+username]],</p>
 <p>Om uw nieuwe wachtwoord te activeren, klikt u op de volgende link:</p>
-<p><a href="[[+confirmUrl]]">[[+ confirmUrl]]</a></p>
+<p><a href="[[+confirmUrl]]">[[+confirmUrl]]</a></p>
 <p>Zodra dit gelukt is kunt u het volgende wachtwoord gebruiken om in te loggen:</p>
 <p><strong>Wachtwoord:</strong> [[+password]]</p>
 <p>Als u niet gevraagd heeft om dit bericht, kunt u dit negeren.</p>
