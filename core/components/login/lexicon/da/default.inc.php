@@ -21,7 +21,8 @@
  * @package login
  */
 /**
- * Default English language strings for Login
+ * Default lexicon for Login
+ *
  * @package login
  * @subpackage lexicon
  */
@@ -33,9 +34,3 @@ $_lang['login.logout_err'] = 'Der skete en ukendt fejl undr forsøget på at log
 $_lang['login.password'] = 'Adgangskode';
 $_lang['login.recaptcha_err_load'] = 'Kunne ikke indlæse reCaptcha service class.';
 $_lang['login.username'] = 'Brugernavn';
-
-
-$_lang['setting_login.forgot_password_confirm_resource'] = 'Id til "Glemt adgangskode bekræftelse" side';
-$_lang['setting_login.forgot_password_confirm_resource_desc'] = 'Angiv Id på siden hvor der bliver givet bekræftelse på ønsket om at skifte et glemt kodeord.';
-$_lang['setting_login.forgot_password_email_subject'] = 'Glemt password Email emne';
-$_lang['setting_login.forgot_password_email_subject_desc'] = 'Emnet på den mail som sendes ved glemt password.';

@@ -21,7 +21,7 @@
  * @package login
  */
 /**
- * Register English lexicon for Login
+ * Register lexicon for Login
  *
  * @package login
  * @subpackage lexicon
@@ -32,7 +32,7 @@ $_lang['register.email_invalid'] = 'Prego inserire un indirizzo email valido.';
 $_lang['register.email_invalid_domain'] = 'Il suo indirizzo email non presenta un dominio valido.';
 $_lang['register.email_no_recipient'] = 'Nessun destinatario specificato per l\'indirizzo.';
 $_lang['register.email_not_sent'] = 'Si è verificato un errore durante il tentativo di inviare l\'e-mail.';
-$_lang['register.email_taken'] = 'L\'e-mail "[[+ email]]" è già in uso. Assicurarsi che non si è ancora registrati, e in caso contrario, si prega di specificare un altro indirizzo e-mail.';
+$_lang['register.email_taken'] = 'L\'e-mail "[[+email]]" è già in uso. Assicurarsi che non si è ancora registrati, e in caso contrario, si prega di specificare un altro indirizzo e-mail.';
 $_lang['register.field_not_empty'] = 'Questo campo deve essere vuoto.';
 $_lang['register.field_required'] = 'Questo campo è obbligatorio.';
 $_lang['register.fullname'] = 'Nome completo';
@@ -53,7 +53,7 @@ $_lang['register.range_invalid'] = 'Assegnazione del campo non valida.';
 $_lang['register.range'] = 'Questo campo deve avere un valore compreso tra [[+min]] e [[+max]].';
 $_lang['register.recaptcha_err_load'] = 'Impossibile caricare il reCaptcha classe di servizio.';
 $_lang['register.register'] = 'Registrare';
-$_lang['register.spam_blocked'] = 'La tua domanda è stata bloccata da un filtro anti-spam:';
+$_lang['register.spam_blocked'] = 'La sua domanda è stata bloccata da un filtro anti-spam:';
 $_lang['register.spam_marked'] = ' – riconosciuto come spam.';
 $_lang['register.use_stronger_password'] = 'La sua password non è abbastanza sicura. Provi a renderla più sicura sostituendo lettere con numeri o aggiungendo parole alla password (prova password con parole multiple). Suggerimenti: [[+suggestions]]';
 $_lang['register.user_err_save'] = 'Si è verificato un errore durante il tentativo di salvare l\'utente.';

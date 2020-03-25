@@ -2,7 +2,8 @@
 /**
  * Login
  *
- * Copyright 2010 by Shaun McCormick <shaun@modx.com>
+ * Copyright 2010 by Jason Coward <jason@modxcms.com> and Shaun McCormick
+ * <shaun@modxcms.com>
  *
  * Login is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
@@ -20,7 +21,7 @@
  * @package login
  */
 /**
- * Change Password English lexicon for Login
+ * Change Password lexicon for Login
  *
  * @package login
  * @subpackage lexicon
@@ -29,7 +30,7 @@ $_lang['login.change_password'] = 'Cambiare la password';
 $_lang['login.password_changed'] = 'Password cambiata.';
 $_lang['login.password_err'] = 'Password errata.';
 $_lang['login.password_err_change'] = 'Si è verificato un errore durante la modifica della password. Prego rivedere le informazioni immesse.';
-$_lang['login.password_invalid_old'] = 'La vecchia password non è vailda.';
+$_lang['login.password_invalid_old'] = 'La vecchia password non è valida.';
 $_lang['login.password_new_confirm'] = 'Confermare la nuova password';
 $_lang['login.password_new'] = 'Nuova Password';
 $_lang['login.password_no_match'] = 'Le password non corrispondono.';

@@ -21,7 +21,8 @@
  * @package login
  */
 /**
- * Default English language strings for Login
+ * Default lexicon for Login
+ *
  * @package login
  * @subpackage lexicon
  */
@@ -33,9 +34,3 @@ $_lang['login.logout_err'] = 'Onbekende uitlog fout!';
 $_lang['login.password'] = 'Wachtwoord';
 $_lang['login.recaptcha_err_load'] = 'Kan de reCAPTCHA klasse niet laden.';
 $_lang['login.username'] = 'Gebruikersnaam';
-
-
-$_lang['setting_login.forgot_password_confirm_resource'] = 'Document ID van het wachtwoord bevestigen vergeten!';
-$_lang['setting_login.forgot_password_confirm_resource_desc'] = 'Vul het ID van het document in waar de bevestiging van het verloren wachtwoord staat.';
-$_lang['setting_login.forgot_password_email_subject'] = 'Wachtwoord vergeten e-mail onderwerp';
-$_lang['setting_login.forgot_password_email_subject_desc'] = 'Het e-mail onderwerp van de wachtwoord vergeten e-mail.';

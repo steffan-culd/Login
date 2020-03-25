@@ -21,7 +21,8 @@
  * @package login
  */
 /**
- * Default English language strings for Login
+ * Default lexicon for Login
+ *
  * @package login
  * @subpackage lexicon
  */
@@ -33,9 +34,3 @@ $_lang['login.logout_err'] = 'Неизвестная ошибка при вых�
 $_lang['login.password'] = 'Пароль';
 $_lang['login.recaptcha_err_load'] = 'Невозможно загрузить класс reCaptcha.';
 $_lang['login.username'] = 'Имя пользователя';
-
-
-$_lang['setting_login.forgot_password_confirm_resource'] = 'Идентификатор ресурса для подтверждения смены пароля';
-$_lang['setting_login.forgot_password_confirm_resource_desc'] = 'Введите идентификатор ресурса на котором будет происходить подтверждение смены пароля.';
-$_lang['setting_login.forgot_password_email_subject'] = 'Тема письма для восстановления пароля';
-$_lang['setting_login.forgot_password_email_subject_desc'] = 'Тема письма, которое пользователь получит при восстановлении пароля.';

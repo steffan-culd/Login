@@ -21,7 +21,8 @@
  * @package login
  */
 /**
- * Default English language strings for Login
+ * Default lexicon for Login
+ *
  * @package login
  * @subpackage lexicon
  */
@@ -33,9 +34,3 @@ $_lang['login.logout_err'] = '¡Error desconocido cerrando sesión!';
 $_lang['login.password'] = 'Contraseña';
 $_lang['login.recaptcha_err_load'] = 'Could not load reCaptcha service class.';
 $_lang['login.username'] = 'Nombre de usuario';
-
-
-$_lang['setting_login.forgot_password_confirm_resource'] = 'Forgot Password Confirmation Resource ID';
-$_lang['setting_login.forgot_password_confirm_resource_desc'] = 'Enter the ID of the Resource where resides your confirmation page for changing a lost password.';
-$_lang['setting_login.forgot_password_email_subject'] = 'Forgot Password Email Subject';
-$_lang['setting_login.forgot_password_email_subject_desc'] = 'The email subject line for the forgotten password email.';

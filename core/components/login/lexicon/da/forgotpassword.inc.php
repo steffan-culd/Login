@@ -21,7 +21,7 @@
  * @package login
  */
 /**
- * Forgot Password English lexicon for Login
+ * Forgot Password lexicon for Login
  *
  * @package login
  * @subpackage lexicon
