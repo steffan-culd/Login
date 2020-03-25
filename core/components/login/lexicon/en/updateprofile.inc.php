@@ -21,7 +21,7 @@
  * @package login
  */
 /**
- * Update Profile English lexicon for Login
+ * Update Profile lexicon for Login
  *
  * @package login
  * @subpackage lexicon
