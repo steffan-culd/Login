@@ -160,15 +160,18 @@ class Login {
 
         $this->modx->getService('mail', 'mail.modPHPMailer');
         $this->modx->mail->set(modMail::MAIL_BODY, $msg);
-        $this->modx->mail->set(modMail::MAIL_FROM, $this->modx->getOption('emailsender'));
-        $this->modx->mail->set(modMail::MAIL_FROM_NAME, $this->modx->getOption('site_name'));
-        $this->modx->mail->set(modMail::MAIL_SENDER, $this->modx->getOption('emailsender'));
+        $this->modx->mail->set(modMail::MAIL_FROM, $this->modx->getOption('emailFrom', $properties, $this->modx->getOption('emailsender'), true));
+        $this->modx->mail->set(modMail::MAIL_FROM_NAME, $this->modx->getOption('emailFromName', $properties, $this->modx->getOption('site_name'), true));
+        $this->modx->mail->set(modMail::MAIL_SENDER, $this->modx->getOption('emailSender', $properties, $this->modx->getOption('emailsender'), true));
         $this->modx->mail->set(modMail::MAIL_SUBJECT, $subject);
         if (!empty($msgAlt)) {
             $this->modx->mail->set(modMail::MAIL_BODY_TEXT, $msgAlt);
         }
         $this->modx->mail->address('to', $email, $name);
-        $this->modx->mail->address('reply-to', $this->modx->getOption('emailsender'));
+        $replyTo = $this->modx->getOption('emailReplyTo', $properties);
+        if (!empty($replyTo)) {
+            $this->modx->mail->address('reply-to', $replyTo);
+        }
         $this->modx->mail->setHTML(true);
         if ($this->inTestMode) return true;
         $sent = $this->modx->mail->send();
