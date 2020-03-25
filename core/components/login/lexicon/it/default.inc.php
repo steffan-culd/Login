@@ -31,11 +31,11 @@ $_lang['login.login_err'] = 'Errore sconosciuto durante il login!';
 $_lang['login.logout'] = 'Logout';
 $_lang['login.logout_err'] = 'Errore sconosciuto durante il logout!';
 $_lang['login.password'] = 'Password';
-$_lang['login.recaptcha_err_load'] = 'Non è possibible caricare il servizio reCaptcha.';
+$_lang['login.recaptcha_err_load'] = 'Non è stato possibile caricare il servizio reCaptcha.';
 $_lang['login.username'] = 'Nome utente';
 
 
 $_lang['setting_login.forgot_password_confirm_resource'] = 'Dimenticato la password ID di conferma delle risorse ';
 $_lang['setting_login.forgot_password_confirm_resource_desc'] = 'Inserisci l\'ID della risorsa in cui risiede la pagina di conferma per cambiare una password dimenticata.';
 $_lang['setting_login.forgot_password_email_subject'] = 'Dimenticato la Password Email Soggetto';
-$_lang['setting_login.forgot_password_email_subject_desc'] = 'L\'oggetto e-mail per l\'e-mail password dimenticata';
+$_lang['setting_login.forgot_password_email_subject_desc'] = 'L\'oggetto per l\'e-mail password dimenticata.';

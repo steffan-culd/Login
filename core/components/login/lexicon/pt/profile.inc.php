@@ -20,18 +20,9 @@
  * @package login
  */
 /**
- * Change Password English lexicon for Login
+ * Profile English lexicon for Login
  *
  * @package login
  * @subpackage lexicon
  */
-$_lang['login.change_password'] = 'Change Password';
-$_lang['login.password_changed'] = 'Lösenordet har blivit bytt.';
-$_lang['login.password_err'] = 'Felaktigt lösenord.';
-$_lang['login.password_err_change'] = 'Ett fel uppstod när systemet försökte byta lösenord. Vänligen kontrollera fälten.';
-$_lang['login.password_invalid_old'] = 'Felaktigt gammalt lösenord.';
-$_lang['login.password_new_confirm'] = 'Bekräfta nytt lösenord';
-$_lang['login.password_new'] = 'Nytt lösenord';
-$_lang['login.password_no_match'] = 'Lösenorden stämmer inte överens.';
-$_lang['login.password_old'] = 'Gammalt lösenord';
-$_lang['login.password_too_short'] = 'Lösenordet är för kort! Vänligen ange ett lösenord som består av minst [[+length]] tecken.';
+$_lang['profile'] = 'Perfil';

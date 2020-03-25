@@ -26,19 +26,19 @@
  * @package login
  * @subpackage lexicon
  */
-$_lang['login.email'] = 'Email';
+$_lang['login.email'] = 'E-mail';
 $_lang['login.forgot_password'] = 'Password dimenticata';
-$_lang['login.forgot_password_email_subject'] = 'Password Retrieval Email';
-$_lang['login.forgot_password_email_text'] = '<p>Hello [[+username]],</p>
-<p>to activate your new password, please click on the following link:</p>
+$_lang['login.forgot_password_email_subject'] = 'Recupero password';
+$_lang['login.forgot_password_email_text'] = '<p>Salve [[+username]],</p>
+<p>per attivare la nuova password, per favore cliccchi sul seguente collegamento:</p>
 <p><a href="[[+confirmUrl]]">[[+confirmUrl]]</a></p>
-<p>If successful, you can use the following password to login:</p>
+<p>Se l\'operazione ha successo, può usare la seguente password per fare login:</p>
 <p><strong>Password:</strong> [[+password]]</p>
-<p>If you did not request this message, please ignore it.</p>
-<p>Thanks,<br />
-<em>[[++site_name]] Site Administration</em></p>';
+<p>Se non ha richiesto questo messaggio, puo ignorarlo.</p>
+<p>Grazie,<br />
+<em>[[++site_name]] L\'amministratore del sito</em></p>';
 $_lang['login.or_forgot_username'] = 'O, dimenticato il nome utente';
-$_lang['login.reset_password'] = 'Reset Password';
+$_lang['login.reset_password'] = 'Resetta la password';
 $_lang['login.username'] = 'Nome utente';
 $_lang['login.user_err_nf_email'] = 'Se esiste l\'utente o l\'email, riceverai una mail a breve.';
 $_lang['login.user_err_nf_username'] = 'Se esiste l\'utente o l\'email, riceverai una mail a breve.';

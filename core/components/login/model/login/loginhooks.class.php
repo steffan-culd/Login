@@ -484,14 +484,26 @@ class LoginHooks {
      * @return boolean True if email was successfully sent.
      */
     public function math(array $fields = array()) {
-        $mathField = $this->modx->getOption('mathField',$this->login->config,'math');
-        if (empty($fields[$mathField])) { $this->errors[$mathField] = $this->modx->lexicon('register.math_field_nf',array('field' => $mathField)); return false; }
-        $op1Field = $this->modx->getOption('mathOp1Field',$this->login->config,'op1');
-        if (empty($fields[$op1Field])) { $this->errors[$mathField] = $this->modx->lexicon('register.math_field_nf',array('field' => $op1Field)); return false; }
-        $op2Field = $this->modx->getOption('mathOp2Field',$this->login->config,'op2');
-        if (empty($fields[$op2Field])) { $this->errors[$mathField] = $this->modx->lexicon('register.math_field_nf',array('field' => $op2Field)); return false; }
-        $operatorField = $this->modx->getOption('mathOperatorField',$this->login->config,'operator');
-        if (empty($fields[$operatorField])) { $this->errors[$mathField] = $this->modx->lexicon('register.math_field_nf',array('field' => $operatorField)); return false; }
+        $mathField = $this->modx->getOption('mathField', $this->login->config, 'math');
+        if (empty($fields[$mathField]) && $fields[$mathField] !== '0') {
+            $this->errors[$mathField] = $this->modx->lexicon('register.math_field_nf', array('field' => $mathField));
+            return false;
+        }
+        $op1Field = $this->modx->getOption('mathOp1Field', $this->login->config, 'op1');
+        if (empty($fields[$op1Field])) {
+            $this->errors[$mathField] = $this->modx->lexicon('register.math_field_nf', array('field' => $op1Field));
+            return false;
+        }
+        $op2Field = $this->modx->getOption('mathOp2Field', $this->login->config, 'op2');
+        if (empty($fields[$op2Field])) {
+            $this->errors[$mathField] = $this->modx->lexicon('register.math_field_nf', array('field' => $op2Field));
+            return false;
+        }
+        $operatorField = $this->modx->getOption('mathOperatorField', $this->login->config, 'operator');
+        if (empty($fields[$operatorField])) {
+            $this->errors[$mathField] = $this->modx->lexicon('register.math_field_nf', array('field' => $operatorField));
+            return false;
+        }
 
         $answer = false;
         $op1 = (int)$fields[$op1Field];

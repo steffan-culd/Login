@@ -27,14 +27,14 @@
  * @subpackage lexicon
  */
 $_lang['register.activation_email_subject'] = 'Grazie per la registrazione. Prego attivare!';
-$_lang['register.email'] = 'Email';
+$_lang['register.email'] = 'E-mail';
 $_lang['register.email_invalid'] = 'Prego inserire un indirizzo email valido.';
 $_lang['register.email_invalid_domain'] = 'Il suo indirizzo email non presenta un dominio valido.';
 $_lang['register.email_no_recipient'] = 'Nessun destinatario specificato per l\'indirizzo.';
 $_lang['register.email_not_sent'] = 'Si è verificato un errore durante il tentativo di inviare l\'e-mail.';
 $_lang['register.email_taken'] = 'L\'e-mail "[[+ email]]" è già in uso. Assicurarsi che non si è ancora registrati, e in caso contrario, si prega di specificare un altro indirizzo e-mail.';
 $_lang['register.field_not_empty'] = 'Questo campo deve essere vuoto.';
-$_lang['register.field_required'] = 'Questo campo è obligatorio.';
+$_lang['register.field_required'] = 'Questo campo è obbligatorio.';
 $_lang['register.fullname'] = 'Nome completo';
 $_lang['register.math_incorrect'] = 'Risposta errata!';
 $_lang['register.math_field_nf'] = '[[+field]] campo di input non specificato nella forma.';
@@ -47,16 +47,16 @@ $_lang['register.not_number'] = 'Questo campo deve avere un numero valido.';
 $_lang['register.not_regexp'] = 'Questo campo ha un valore non corretto.';
 $_lang['register.password'] = 'Password';
 $_lang['register.password_confirm'] = 'Conferma Password';
-$_lang['register.password_dont_match'] = 'La password non corrisponde.';
+$_lang['register.password_dont_match'] = 'Le password non corrispondono.';
 $_lang['register.password_not_confirmed'] = 'Prego confermare la password';
 $_lang['register.range_invalid'] = 'Assegnazione del campo non valida.';
-$_lang['register.range'] = 'Il suo valore deve essere entro [[+min]] e[[+max]].';
+$_lang['register.range'] = 'Questo campo deve avere un valore compreso tra [[+min]] e [[+max]].';
 $_lang['register.recaptcha_err_load'] = 'Impossibile caricare il reCaptcha classe di servizio.';
 $_lang['register.register'] = 'Registrare';
 $_lang['register.spam_blocked'] = 'La tua domanda è stata bloccata da un filtro anti-spam:';
 $_lang['register.spam_marked'] = ' – riconosciuto come spam.';
-$_lang['register.use_stronger_password'] = 'Your password is not strong enough. Perhaps you should strengthen it, by replacing letters with numbers or adding more words to the password (try multiple word passwords). Suggestions: [[+suggestions]]';
+$_lang['register.use_stronger_password'] = 'La sua password non è abbastanza sicura. Provi a renderla più sicura sostituendo lettere con numeri o aggiungendo parole alla password (prova password con parole multiple). Suggerimenti: [[+suggestions]]';
 $_lang['register.user_err_save'] = 'Si è verificato un errore durante il tentativo di salvare l\'utente.';
 $_lang['register.username'] = 'Nome utente';
 $_lang['register.username_taken'] = 'Nome utente già in uso. Prego sceglierne un altro';
-$_lang['register.validation_error_message'] = 'A form validation error occurred. Please check the values you have entered.';
+$_lang['register.validation_error_message'] = 'Si è verificato un errore di validazione. Per cortesia controllare i valori inseriti.';
