@@ -21,7 +21,7 @@
  * @package login
  */
 /**
- * Register English lexicon for Login
+ * Register lexicon for Login
  *
  * @package login
  * @subpackage lexicon

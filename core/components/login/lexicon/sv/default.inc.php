@@ -21,7 +21,8 @@
  * @package login
  */
 /**
- * Default English language strings for Login
+ * Default lexicon for Login
+ *
  * @package login
  * @subpackage lexicon
  */
@@ -33,9 +34,3 @@ $_lang['login.logout_err'] = 'Okänt fel vid utloggning!';
 $_lang['login.password'] = 'Lösenord';
 $_lang['login.recaptcha_err_load'] = 'Kunde inte ladda reCaptcha tjänsteklassen.';
 $_lang['login.username'] = 'Användarnamn';
-
-
-$_lang['setting_login.forgot_password_confirm_resource'] = 'Glömt lösenord bekräftelse resurs ID';
-$_lang['setting_login.forgot_password_confirm_resource_desc'] = 'Ange ID:t för resursen med din bekräftelse sida för byte av glömt lösenord.';
-$_lang['setting_login.forgot_password_email_subject'] = 'Glömt lösenord e-post ämne';
-$_lang['setting_login.forgot_password_email_subject_desc'] = 'E-postmeddelandets ämne för glömt lösenord.';
