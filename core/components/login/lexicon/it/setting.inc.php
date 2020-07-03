@@ -26,7 +26,14 @@
  * @package login
  * @subpackage lexicon
  */
+$_lang['area_recaptcha'] = 'reCAPTCHA';
 $_lang['setting_login.forgot_password_confirm_resource'] = 'Dimenticato la password ID di conferma delle risorse ';
 $_lang['setting_login.forgot_password_confirm_resource_desc'] = 'Inserisci l\'ID della risorsa in cui risiede la pagina di conferma per cambiare una password dimenticata.';
 $_lang['setting_login.forgot_password_email_subject'] = 'Dimenticato la Password Email Soggetto';
 $_lang['setting_login.forgot_password_email_subject_desc'] = 'L\'oggetto per l\'e-mail password dimenticata.';
+$_lang['setting_recaptcha.private_key'] = 'reCaptcha private key';
+$_lang['setting_recaptcha.private_key_desc'] = 'The reCaptcha private key';
+$_lang['setting_recaptcha.public_key'] = 'reCaptcha public key';
+$_lang['setting_recaptcha.public_key_desc'] = 'The reCaptcha public key';
+$_lang['setting_recaptcha.use_ssl'] = 'Use SSL';
+$_lang['setting_recaptcha.use_ssl_desc'] = 'Use SSL for reCaptcha requests. Defaults to false.';

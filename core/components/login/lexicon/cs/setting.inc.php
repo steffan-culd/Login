@@ -26,7 +26,14 @@
  * @package login
  * @subpackage lexicon
  */
+$_lang['area_recaptcha'] = 'reCAPTCHA';
 $_lang['setting_login.forgot_password_confirm_resource'] = 'ID dokumentu pro změnu zapomenutého hesla';
 $_lang['setting_login.forgot_password_confirm_resource_desc'] = 'Zadejte ID dokumentu, kde je umístěn formulář pro změnu zapomenutého hesla.';
 $_lang['setting_login.forgot_password_email_subject'] = 'Předmět e-mailu žádosti zapomenutého hesla';
 $_lang['setting_login.forgot_password_email_subject_desc'] = 'Předmět e-mailu odesílaného při požadavku změny zapomenutého hesla.';
+$_lang['setting_recaptcha.private_key'] = 'reCaptcha private key';
+$_lang['setting_recaptcha.private_key_desc'] = 'The reCaptcha private key';
+$_lang['setting_recaptcha.public_key'] = 'reCaptcha public key';
+$_lang['setting_recaptcha.public_key_desc'] = 'The reCaptcha public key';
+$_lang['setting_recaptcha.use_ssl'] = 'Use SSL';
+$_lang['setting_recaptcha.use_ssl_desc'] = 'Use SSL for reCaptcha requests. Defaults to false.';
