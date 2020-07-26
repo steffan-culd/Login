@@ -21,7 +21,8 @@
  * @package login
  */
 /**
- * Default English language strings for Login
+ * Default lexicon for Login
+ *
  * @package login
  * @subpackage lexicon
  */
@@ -33,9 +34,3 @@ $_lang['login.logout_err'] = 'Neznámá chyba při odhlašování!';
 $_lang['login.password'] = 'Heslo';
 $_lang['login.recaptcha_err_load'] = 'Nelze načíst třídu služby reCaptcha.';
 $_lang['login.username'] = 'Uživatelské jméno';
-
-
-$_lang['setting_login.forgot_password_confirm_resource'] = 'ID dokumentu pro změnu zapomenutého hesla';
-$_lang['setting_login.forgot_password_confirm_resource_desc'] = 'Zadejte ID dokumentu, kde je umístěn formulář pro změnu zapomenutého hesla.';
-$_lang['setting_login.forgot_password_email_subject'] = 'Předmět e-mailu žádosti zapomenutého heslaForgot Password Email Subject';
-$_lang['setting_login.forgot_password_email_subject_desc'] = 'Předmět e-mailu odesílaného při požadavku změny zapomenutého hesla.';

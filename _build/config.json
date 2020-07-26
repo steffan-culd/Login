@@ -3,7 +3,7 @@
   "lowCaseName": "login",
   "description": "Login and Registrations",
   "author": "Jason Coward & Shaun McCormick",
-  "version": "1.9.7",
+  "version": "1.9.8",
   "package": {
     "elements": {
       "snippets": [
@@ -321,12 +321,12 @@
             },
             {
               "name": "redirectTo",
-              "description": "prop_forgotpassword.redirectto_desc",
+              "description": "prop_confirmregister.redirectto_desc",
               "value": ""
             },
             {
               "name": "redirectParams",
-              "description": "prop_forgotpassword.redirectparams_desc",
+              "description": "prop_confirmregister.redirectparams_desc",
               "value": ""
             }
           ]
@@ -508,7 +508,7 @@
             },
             {
               "name": "recaptchaTheme",
-              "description": "prop_register.recaptchatheme_desc",
+              "description": "prop_register.recaptchaTheme_desc",
               "type": "list",
               "options": [
                 {
@@ -746,7 +746,7 @@
             },
             {
               "name": "recaptchaTheme",
-              "description": "prop_register.recaptchatheme_desc",
+              "description": "prop_register.recaptchaTheme_desc",
               "type": "list",
               "options": [
                 {
@@ -970,25 +970,25 @@
       {
         "key": "forgot_password_email_subject",
         "value": "Password Retrieval Email",
-        "area": "security"
+        "area": "authentication"
       },
       {
         "key": "public_key",
         "value": "",
         "namespace": "recaptcha",
-        "area": "reCaptcha"
+        "area": "recaptcha"
       },
       {
         "key": "private_key",
         "value": "",
         "namespace": "recaptcha",
-        "area": "reCaptcha"
+        "area": "recaptcha"
       },
       {
         "key": "use_ssl",
         "value": "false",
         "namespace": "recaptcha",
-        "area": "reCaptcha",
+        "area": "recaptcha",
         "type": "combo-boolean"
       }
     ]

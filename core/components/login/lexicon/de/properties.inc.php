@@ -1,5 +1,28 @@
 <?php
 /**
+ * Login
+ *
+ * Copyright 2010 by Jason Coward <jason@modxcms.com> and Shaun McCormick
+ * <shaun@modxcms.com>
+ *
+ * Login is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation; either version 2 of the License, or (at your option) any
+ * later version.
+ *
+ * Login is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * Login; if not, write to the Free Software Foundation, Inc., 59 Temple
+ * Place, Suite 330, Boston, MA 02111-1307 USA
+ *
+ * @package login
+ */
+/**
+ * Properties lexicon for Login
+ *
  * @package login
  * @subpackage lexicon
  */
@@ -36,7 +59,7 @@ $_lang['prop_login.loginmsg_desc'] = '(Optional) Nachricht für die Login Aktion
 $_lang['prop_login.logoutmsg_desc'] = '(Optional) Nachricht für die Logout Aktion. Falls leer, wird der Standardeintrag im Lexicon ausgegeben.';
 $_lang['prop_login.redirecttoprior_desc'] = 'Wenn diese Einstellung aktiv ist, wird der Benutzer nach erfolgreichem Login zur Referrer-Seite weitergeleitet (HTTP_REFERER).';
 $_lang['prop_login.redirecttoonfailedauth_desc'] = 'Eine Ressourcen-Id, zu der Benutzer nach einem nicht erfolgreichen Login weitergeleitet werden. 0 leitet auf die gleiche Seite zurück.';
-$_lang['prop_login.rememberme_desc'] = '(Optional) Dieses Feld kann genutzt werden, um den Login Status zu merken. Standard ist \'rememberme\'.';
+$_lang['prop_login.remembermekey_desc'] = '(Optional) Dieses Feld kann genutzt werden, um den Login Status zu merken. Standard ist \'rememberme\'.';
 $_lang['prop_login.contexts_desc'] = '(Experimentell) Eine kommaseparierte Liste von Kontexten, in die der Benutzer eingeloggt wird. Standardwert ist der aktuelle Kontext.';
 $_lang['prop_login.toplaceholder_desc'] = 'Wenn diese Einstellung aktiv ist, wird die Ausgabe des Snippets an einen Platzhalter dieses Namens übergeben, statt die Inhalte direkt auszugeben.';
 
@@ -53,7 +76,7 @@ $_lang['prop_register.submittedresourceid_desc'] = 'Wenn diese Einstellung aktiv
 $_lang['prop_register.usernamefield_desc'] = 'Der Name des Feldes für den Benutzernamen des registrierten Benutzers.';
 $_lang['prop_register.passwordfield_desc'] = 'Der Name des Feldes für das Passwort des neuen Benutzers.';
 $_lang['prop_register.emailfield_desc'] = 'Der Name des Feldes für die E-Mail Adresse des neuen Benutzers.';
-$_lang['prop_register.successmsg_desc'] = '(Optional). Falls der Benutzer nicht mittels des submittedResourceId Parameters weitergeleitet wird, wird diese Nachricht angezeigt.';
+$_lang['prop_register.successMsg_desc'] = '(Optional). Falls der Benutzer nicht mittels des submittedResourceId Parameters weitergeleitet wird, wird diese Nachricht angezeigt.';
 $_lang['prop_register.persistparams_desc'] = '(Optional) Ein JSON Objekt mit Parametern, die über den Registrierungsprozess hinaus gespeichert werden sollen. Dies ist nützlich, wenn Sie die ConfirmRegister-Weiterleitung benutzen um auf eine andere Seite zu weiterzuleiten (z.B. Einkaufswägen).';
 $_lang['prop_register.prehooks_desc'] = 'Skripte, die vor einer Validation ausgeführt werden sollen. Es kann eine kommaseparierte Liste von Hooks angegeben werden. Sollte ein Hook nicht validieren, werden keine weitere ausgeführt. Ein Hook kann ein Snippetname oder ein Dateiname im Format \'[[++assets_path]]hooks/my.hook.php\' sein.';
 $_lang['prop_register.posthooks_desc'] = 'Skripte, die nach der Registrierung des Nutzers ausgeführt werden sollen. Es kann eine kommaseparierte Liste von Hooks angegeben werden. Sollte ein Hook nicht validieren, werden keine weitere ausgeführt. Ein Hook kann ein Snippetname oder ein Dateiname im Format \'[[++assets_path]]hooks/my.hook.php\' sein.';
@@ -69,9 +92,9 @@ $_lang['prop_register.activationemailtpl_desc'] = 'Das Aktivierungsmail Template
 $_lang['prop_register.activationemailtplalt_desc'] = '(Optional) Das Template für die Nur-Text-Alternative der Aktivierungsmail.';
 $_lang['prop_register.moderatedresourceid_desc'] = 'Wenn ein prehook den Benutzer als zu moderieren kennzeichnet, wird er auf diese Ressourcen-Id statt zur submittedResourceId weitergeleitet. Lassen Sie dieses Feld leer, um die Funktion nicht zu nutzen.';
 $_lang['prop_register.placeholderprefix_desc'] = 'Das Prefix, das für alle Platzhalter des Snippets genutzt werden soll.';
-$_lang['prop_register.recaptchaheight_desc'] = 'Falls \'recaptcha\' als preHook gesetzt ist, setzt dies die Höhe des reCaptcha Widgets.';
-$_lang['prop_register.recaptchatheme_desc'] = 'Falls \'recaptcha\' als preHook gesetzt ist, setzt dies das Thema des reCaptcha Widgets.';
-$_lang['prop_register.recaptchawidth_desc'] = 'Falls \'recaptcha\' als preHook gesetzt ist, setzt dies die Breite des reCaptcha Widgets.';
+$_lang['prop_register.recaptchaHeight_desc'] = 'Falls \'recaptcha\' als preHook gesetzt ist, setzt dies die Höhe des reCaptcha Widgets.';
+$_lang['prop_register.recaptchaTheme_desc'] = 'Falls `recaptcha` als preHook gesetzt ist, setzt dies das Thema des reCaptcha Widgets.';
+$_lang['prop_register.recaptchaWidth_desc'] = 'Falls `recaptcha` als preHook gesetzt ist, setzt dies die Breite des reCaptcha Widgets.';
 $_lang['prop_register.mathminrange_desc'] = 'Falls \'math\' als preHook gesetzt ist, gibt dieser Wert die minimalen Zahlenstellen für jede Nummer der Gleichung an.';
 $_lang['prop_register.mathmaxrange_desc'] = 'Falls \'math\' als preHook gesetzt ist, gibt dieser Wert die die maximalen Zahlenstellen für jede Nummer der Gleichung an.';
 $_lang['prop_register.mathfield_desc'] = 'Falls \'math\' als preHook gesetzt ist, gibt dieser Wert den Namen des Antwort Feldes an.';
@@ -85,7 +108,7 @@ $_lang['prop_register.ensurePasswordStrength_desc'] = 'Wenn diese Einstellung ak
 $_lang['prop_register.passwordWordSeparator_desc'] = 'Wenn ensurePasswordStrength aktiv ist, bestimmt diese Einstellung das Trennzeichen zwischen den Wörtern, um festzustellen wie viele Wörter das eingegebene Passwort enthält.';
 $_lang['prop_register.minimumStrongPasswordWordCount_desc'] = 'Wenn ensurePasswordStrength aktiv ist, wird ein eingegebenes Passwort mit dieser Anzahl an Worten als ein starkes Passwort behandelt.';
 $_lang['prop_register.maximumPossibleStrongerPasswords_desc'] = 'Wenn ensurePasswordStrength aktiv ist, dann gibt die Einstellung die maximale Anzahl von Vorschlägen an, die Register benutzt, um das angegebene Kennwort als „stark“ zu betrachten. Wenn Sie diese Zahl erhöhen, wird der Überprüfung nachsichtiger. Kleinere Werte machen die Überprüfung stärker.';
-$_lang['prop_register.ensurePasswordStrengthSuggestions'] = 'Wenn ensurePasswordStrength aktiv ist und die Überprüfung der Passwortstärke fehlschlägt, schlägt Register dem Benutzer eine in der Einstellung angegebene Anzahl von sicheren Passwörtern vor.';
+$_lang['prop_register.ensurePasswordStrengthSuggestions_desc'] = 'Wenn ensurePasswordStrength aktiv ist und die Überprüfung der Passwortstärke fehlschlägt, schlägt Register dem Benutzer eine in der Einstellung angegebene Anzahl von sicheren Passwörtern vor.';
 $_lang['prop_register.allowedfields_desc'] = 'Wenn diese Einstellung aktiv ist, wird die Speicherung der Benutzerfelder auf die Feldnamen in der kommaseparierten Liste eingeschränkt. Gilt ebenso für erweiterte Benutzerfelder.';
 $_lang['prop_register.removeexpiredregistrations_desc'] = 'Wenn diese Einstellung aktiv ist, werden registrierte Benutzer entfernt, die sich bis zum Ablauf der Aktivierungszeit nicht aktiviert haben. Es wird empfohlen, diese Einstellung aktiv zu lassen.';
 $_lang['prop_register.preservefieldsafterregister_desc'] = 'Wenn diese Einstellung aktiv ist, werden Daten der Registrierung nach erfolgreicher Registrierung gespeichert. Deaktivieren Sie diese Einstellung um die Daten zurückzusetzen.';

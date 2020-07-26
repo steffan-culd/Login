@@ -1,5 +1,28 @@
 <?php
 /**
+ * Login
+ *
+ * Copyright 2010 by Jason Coward <jason@modxcms.com> and Shaun McCormick
+ * <shaun@modxcms.com>
+ *
+ * Login is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation; either version 2 of the License, or (at your option) any
+ * later version.
+ *
+ * Login is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * Login; if not, write to the Free Software Foundation, Inc., 59 Temple
+ * Place, Suite 330, Boston, MA 02111-1307 USA
+ *
+ * @package login
+ */
+/**
+ * Properties lexicon for Login
+ *
  * @package login
  * @subpackage lexicon
  */
@@ -36,7 +59,7 @@ $_lang['prop_login.loginmsg_desc'] = 'Mensagem opcional para ação de início d
 $_lang['prop_login.logoutmsg_desc'] = 'Mensagem opcional para ação de encerramento de sessão. Se estiver em branco, será utilizada a string de léxico para Logout como pré-definição.';
 $_lang['prop_login.redirecttoprior_desc'] = 'Se verdadeiro, redirecionará para a página de referência (HTTP_REFERER) no início de sessão bem sucedido.';
 $_lang['prop_login.redirecttoonfailedauth_desc'] = 'Se definido um número diferente de 0, irá redirecionar o utilizador para esta página, se a sua tentativa de iniciar a sessão for mal sucedida.';
-$_lang['prop_login.rememberme_desc'] = 'Opcional. O nome do campo do botão "Lembrar-me" para preservar o estado de início de sessão. A pré-definição é `rememberme`.';
+$_lang['prop_login.remembermekey_desc'] = 'Opcional. O nome do campo do botão "Lembrar-me" para preservar o estado de início de sessão. A pré-definição é `rememberme`.';
 $_lang['prop_login.contexts_desc'] = '(Experimental) Uma lista separada por vírgulas com os contextos onde iniciar a sessão. A pré-definição será o contexto atual se não estiver definido explicitamente.';
 $_lang['prop_login.toplaceholder_desc'] = 'Se definido, irá definir o output do snippet de login para um placeholder com este nome, em vez de entregar diretamente o conteúdo.';
 
@@ -53,7 +76,7 @@ $_lang['prop_register.submittedresourceid_desc'] = 'Se definido, irá redirecion
 $_lang['prop_register.usernamefield_desc'] = 'O nome do campo a ser utilizado para o nome de utilizador do novo utilizador.';
 $_lang['prop_register.passwordfield_desc'] = 'O nome do campo a ser utilizado para a palavra-passe do novo utilizador.';
 $_lang['prop_register.emailfield_desc'] = 'O nome do campo a ser utilizado para o email do novo utilizador.';
-$_lang['prop_register.successmsg_desc'] = 'Opcional. Se não redirecionar utilizando o parâmetro submittedResourceId, esta mensagem irá ser exibida.';
+$_lang['prop_register.successMsg_desc'] = 'Opcional. Se não redirecionar utilizando o parâmetro submittedResourceId, esta mensagem irá ser exibida.';
 $_lang['prop_register.persistparams_desc'] = 'Opcional. Um objeto JSON de parâmetros para persistirem em todo o processo de registo. Útil ao utilizar um redirecionamento no ConfirmRegister para redirecionar para outra página (por exemplo, carrinhos de compras).';
 $_lang['prop_register.prehooks_desc'] = 'Quais os scripts a executar, se existirem, antes do formulário passar a validação. Isto pode ser uma lista de hooks, separados por vírgulas. Se o primeiro falhar, os seguintes não serão executados. Um hook também pode ser um nome de um Snippet que executará o respetivo Snippet.';
 $_lang['prop_register.posthooks_desc'] = 'Quais os scripts a executar, se existirem, após um utilizador estar registado. Isto pode ser uma lista de hooks, separados por vírgulas. Se o primeiro falhar, os seguintes não serão executados. Um hook também pode ser um nome de um Snippet que executará o respetivo Snippet.';
@@ -69,9 +92,9 @@ $_lang['prop_register.activationemailtpl_desc'] = 'O TPL do email de ativação.
 $_lang['prop_register.activationemailtplalt_desc'] = '(Opcional) Alternativa de texto plano para o tpl do e-mail de ativação.';
 $_lang['prop_register.moderatedresourceid_desc'] = 'Se um pre-hook define o utilizador como moderado, então envia para este Recurso em vez do submittedResourceId. Deixe em branco para ignorar.';
 $_lang['prop_register.placeholderprefix_desc'] = 'O prefixo a ser incluido em todos os placeholders definidos por este snippet.';
-$_lang['prop_register.recaptchaheight_desc'] = 'Se `recaptcha` for definido como um preHook, isto irá selecionar a altura para o widget reCaptcha.';
-$_lang['prop_register.recaptchatheme_desc'] = 'Se `recaptcha` for definido como um preHook, isto irá selecionar um tema para o widget reCaptcha.';
-$_lang['prop_register.recaptchawidth_desc'] = 'Se `recaptcha` for definido como um preHook, isto irá selecionar a largura para o widget reCaptcha.';
+$_lang['prop_register.recaptchaHeight_desc'] = 'Se `recaptcha` for definido como um preHook, isto irá selecionar a altura para o widget reCaptcha.';
+$_lang['prop_register.recaptchaTheme_desc'] = 'Se `recaptcha` for definido como um preHook, isto irá selecionar um tema para o widget reCaptcha.';
+$_lang['prop_register.recaptchaWidth_desc'] = 'Se `recaptcha` for definido como um preHook, isto irá selecionar a largura para o widget reCaptcha.';
 $_lang['prop_register.mathminrange_desc'] = 'Se `math` for definido como um preHook, o intervalo mínimo para cada número na equação.';
 $_lang['prop_register.mathmaxrange_desc'] = 'Se `math` for definido como um preHook, o intervalo máximo para cada número na equação.';
 $_lang['prop_register.mathfield_desc'] = 'Se `math` for definido como um preHook, o nome do campo de entrada para a resposta.';
@@ -85,7 +108,7 @@ $_lang['prop_register.ensurePasswordStrength_desc'] = 'Se definido como "Sim", o
 $_lang['prop_register.passwordWordSeparator_desc'] = 'Se ensurePasswordStrength estiver definido como "Sim", este será o separador entre palavras ao determinar quantas palavras estão numa palavra-passe fornecida.';
 $_lang['prop_register.minimumStrongPasswordWordCount_desc'] = 'Se ensurePasswordStrength estiver definida como "Sim", se uma palavra-passe fornecida tem muitas palavras, então será considerada uma palavra-passe forte.';
 $_lang['prop_register.maximumPossibleStrongerPasswords_desc'] = 'Se ensurePasswordStrength estiver definido como "Sim", então este é o máximo de sugestões que o Register pode encontrar para considerar uma palavra-passe "forte". Tornar este número maior, torna a verificação mais suave; menor, torna-a mais difícil.';
-$_lang['prop_register.ensurePasswordStrengthSuggestions'] = 'Se ensurePasswordStrength estiver definida como "Sim", e se a palavra-passe falhar no teste de força, o Register irá fornecer tantas sugestões ao utilizador para a sua palavra-passe quantas as necessárias.';
+$_lang['prop_register.ensurePasswordStrengthSuggestions_desc'] = 'Se ensurePasswordStrength estiver definida como "Sim", e se a palavra-passe falhar no teste de força, o Register irá fornecer tantas sugestões ao utilizador para a sua palavra-passe quantas as necessárias.';
 $_lang['prop_register.allowedfields_desc'] = 'Se definido, irá limitar os campos que são permitidos a serem definidos no utilizador recém-criado para esta lista separada por vírgulas. Também restringe os campos estendidos.';
 $_lang['prop_register.removeexpiredregistrations_desc'] = 'Se verdadeiro, irá remover utilizadores registados que expiraram, que não foram utilizados ou que nunca foram ativados. É recomendado deixar esta opção ativada para evitar spam.';
 $_lang['prop_register.preservefieldsafterregister_desc'] = 'Se verdadeiro, os dados dos campos de registo serão guardados após o registo com sucesso. Para redefinir os dados dos campos, defina como "falso"';

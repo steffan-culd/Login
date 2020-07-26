@@ -215,6 +215,9 @@ class LoginRegisterController extends LoginController {
         /* ensure username field exists and isn't empty */
         if (empty($username) && !$this->validator->hasErrorsInField($usernameField)) {
             $this->validator->addError($usernameField,$this->modx->lexicon('register.field_required'));
+            $success = false; }
+        elseif (strpos($username, '../') !== false) {
+            $this->validator->addError($usernameField,$this->modx->lexicon('register.username_traversal'));
             $success = false;
         } else {
             /* make sure username isnt taken */
