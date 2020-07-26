@@ -4,6 +4,8 @@ Changelog for Login
 Login 1.9.8
 ------------------------------------
 - Allow persistParams when redirectUnsetDefaultParams is true [#157]
+- Parse file based chunks [#167]
+- Prevent directory traversal in the username when register a new user
 - Update Translations
 
 Login 1.9.7

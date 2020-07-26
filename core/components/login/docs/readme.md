@@ -1,7 +1,7 @@
 --------------------
 Snippet: Login
 --------------------
-- Version: 1.9.6
+- Version: 1.9.8
 - Since: June 21, 2010
 - Author: Jason Coward <jason@modx.com>,
         Shaun McCormick <shaun+login@modx.com>
