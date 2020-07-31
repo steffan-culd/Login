@@ -29,10 +29,7 @@ if ($object->xpdo) {
             
             /** @var modTransportPackage $oldPackage */
             $oldPackage = $modx->getObject('transport.modTransportPackage', $c);
-            $modelPath = $modx->getOption('login.core_path',null,$modx->getOption('core_path').'components/login/').'model/';
-            
-            $modx->addPackage('login',$modelPath);
-            
+
             if ($oldPackage && $oldPackage->compareVersion('1.9.2-pl', '>')) {
                 $namespace = $modx->getObject('modNamespace', array('name' => 'login'));
                 if ($namespace) {
