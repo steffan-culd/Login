@@ -1,6 +1,10 @@
 Changelog for Login
 ===================
 
+Login 1.9.9
+------------------------------------
+- Fix validate email addresses in Register [#143]
+
 Login 1.9.8
 ------------------------------------
 - Allow persistParams when redirectUnsetDefaultParams is true [#157]
