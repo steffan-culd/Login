@@ -44,7 +44,7 @@ class RegisterPreHookTest extends LoginTestCase {
      * @return void
      */
     public function testPreHooks() {
-        $this->controller->setProperty('preHooks',$this->login->config['testsPath'].'Hooks/Pre/prehooktest.setvalue.php');
+        $this->controller->setProperty('preHooks', dirname(dirname(dirname(dirname(__FILE__)))) . '/Hooks/Pre/prehooktest.setvalue.php');
         $this->controller->loadPreHooks();
         $val = $this->controller->preHooks->getValue('fullname');
         $success = strcmp($val,'TestPreValue') == 0;

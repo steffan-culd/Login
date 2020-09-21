@@ -29,7 +29,7 @@
  * @subpackage test
  */
 $properties = array(
-    xPDO::OPT_CACHE_PATH => MODX_CORE_PATH.'cache/',
+    xPDO::OPT_CACHE_PATH => MODX_CORE_PATH . 'cache/',
     xPDO::OPT_HYDRATE_FIELDS => true,
     xPDO::OPT_HYDRATE_RELATED_OBJECTS => true,
     xPDO::OPT_HYDRATE_ADHOC_FIELDS => true,
@@ -38,7 +38,7 @@ $properties = array(
 /* PHPUnit test config */
 $properties['modx_test_path'] = dirname(__FILE__) . '/';
 $properties['modx_config_path'] = '';
-$properties['logLevel']= modX::LOG_LEVEL_INFO;
+$properties['logLevel'] = modX::LOG_LEVEL_INFO;
 $properties['ctx'] = 'web';
 $properties['debug'] = false;
 $properties['email'] = 'my@email.com';

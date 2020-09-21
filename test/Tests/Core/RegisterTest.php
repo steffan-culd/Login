@@ -42,6 +42,7 @@ class RegisterTest extends LoginTestCase {
             'id' => 12345678,
             'username' => 'unit.test.user',
             'password' => md5('a test password'),
+            'fullname' => 'unit.test.fullname',
             'cachepwd' => '',
             'class_key' => 'modUser',
             'active' => false,
@@ -51,6 +52,7 @@ class RegisterTest extends LoginTestCase {
         ));
         $_POST = array(
             'username' => 'unit.test.user',
+            'fullname' => 'unit.test.fullname',
             'password' => 'a test password',
             'password_confirm' => 'a test password',
             'email' => LoginTestHarness::$properties['email'],
@@ -84,23 +86,23 @@ class RegisterTest extends LoginTestCase {
      * @dataProvider providerValidateFields
      */
     public function testValidateFields($shouldPass,$validate) {
-        $this->controller->setProperty('validate',$validate);
+        $this->controller->setProperty('validate', $validate);
         $this->controller->validateFields();
-        $this->assertEquals($shouldPass,!$this->controller->validator->hasErrors());
+        $this->assertEquals($shouldPass, !$this->controller->validator->hasErrors());
     }
     /**
      * @return array
      */
     public function providerValidateFields() {
         return array(
-            array(true,''),
-            array(true,'username:required'),
-            array(false,'notafield:required'),
-            array(true,'password_confirm:password_confirm=^password^'),
-            array(false,'password_confirm:password_confirm=^password2^'),
-            array(true,'email:email:required'),
-            array(true,'email2:email'),
-            array(false,'email2:email:required'),
+            array(true, ''),
+            array(true, 'username:required'),
+            array(false, 'notafield:required'),
+            array(true, 'password_confirm:password_confirm=^password^'),
+            array(false, 'password_confirm:password_confirm=^password2^'),
+            array(true, 'email:email:required'),
+            array(true, 'email2:email'),
+            array(false, 'email2:email:required'),
         );
     }
 
@@ -110,16 +112,16 @@ class RegisterTest extends LoginTestCase {
      * @dataProvider providerValidatePassword
      */
     public function testValidatePassword($shouldPass,$password) {
-        $this->controller->dictionary->set('password',$password);
-        $this->controller->setProperty('validate','');
+        $this->controller->dictionary->set('password', $password);
+        $this->controller->setProperty('validate', '');
         $this->controller->validateFields();
         $this->controller->validatePassword();
-        $this->assertEquals($shouldPass,!$this->controller->validator->hasErrors());
+        $this->assertEquals($shouldPass, !$this->controller->validator->hasErrors());
     }
     public function providerValidatePassword() {
         return array(
-            array(true,'testing1234'),
-            array(false,''),
+            array(true, 'testing1234'),
+            array(false, ''),
         );
     }
 }

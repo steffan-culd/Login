@@ -286,7 +286,7 @@ class LoginValidator {
      */
     public function addError($key,$value) {
         // If jsonResponse is requested, we don't want span tags in our errors by default.
-        if($this->login->config['jsonResponse']){
+        if ($this->modx->getOption('jsonResponse', $this->login->config, false)) {
             $errTpl = $this->modx->getOption('errTpl',$this->login->config,'[[+error]]');
         } else {
             $errTpl = $this->modx->getOption('errTpl',$this->login->config,'<span class="error">[[+error]]</span>');

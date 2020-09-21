@@ -9,7 +9,8 @@
  * @package login
  * @subpackage test
  */
-class LoginTestCase extends PHPUnit_Framework_TestCase {
+
+class LoginTestCase extends \PHPUnit\Framework\TestCase {
     /**
      * @var modX $modx
      */
@@ -20,18 +21,18 @@ class LoginTestCase extends PHPUnit_Framework_TestCase {
     protected $login = null;
 
     /**
-     * Ensure all tests have a reference to the MODX and Quip objects
+     * Ensure all tests have a reference to the MODX and Login objects
      */
     public function setUp() {
-        $this->modx =& LoginTestHarness::_getConnection();
-        $corePath = $this->modx->getOption('login.core_path',null,$this->modx->getOption('core_path',null,MODX_CORE_PATH).'components/login/');
-        require_once $corePath.'model/login/login.class.php';
+        $this->modx = LoginTestHarness::_getConnection();
+        $corePath = $this->modx->getOption('login.core_path', null, $this->modx->getOption('core_path', null, MODX_CORE_PATH) . 'components/login/');
+        require_once $corePath . 'model/login/login.class.php';
         $this->login = new Login($this->modx);
         /* set this here to prevent emails/headers from being sent */
         $this->login->inTestMode = true;
         /* make sure to reset MODX placeholders so as not to keep placeholder data across tests */
         $this->modx->placeholders = array();
-        $this->modx->login =& $this->login;
+        $this->modx->login = &$this->login;
         error_reporting(E_ALL);
     }
 

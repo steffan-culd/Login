@@ -31,11 +31,13 @@ class Login {
     const MODE_LOGOUT = 'logout';
     const REGISTER_MODERATE = 'register.moderate';
 
+    /** @var modX $modx */
+    public $modx;
     /** @var LoginController $controller */
     public $controller;
     /** @var boolean $inTestMode */
     public $inTestMode = false;
-    
+
     /**
      * Creates an instance of the Login class.
      *
@@ -52,7 +54,6 @@ class Login {
             'corePath' => $corePath,
             'modelPath' => $corePath.'model/',
             'processorsPath' => $corePath.'processors/',
-            'testsPath' => $corePath.'test/',
         ),$config);
         $this->modx->lexicon->load('login:default');
     }

@@ -4,17 +4,16 @@
  * @subpackage test
  */
 /**
- * Test for issue #5796: http://bugs.modx.com/issues/5796
- * 
+ * [[!Register? &activation=`0` &submittedResourceId=`65` &usernameField=`email` &emailField=`email`]]
+ *
  * @package login
  * @subpackage test
  * @group Cases
  * @group Register
  * @group Cases.Register
- * @group Cases.Register.5796
- * @group Issue-5796
+ * @group Cases.Register.FormOne
  */
-class RegisterForm5796Test extends LoginTestCase {
+class RegisterFormOneTest extends LoginTestCase {
     /** @var LoginRegisterController */
     public $controller;
     /** @var modUser $user */
@@ -30,26 +29,18 @@ class RegisterForm5796Test extends LoginTestCase {
             'activation' => false,
             'preHooks' => '',
             'postHooks' => '',
-            'submitVar' => 'registerbtn',
-
-            'activationResourceId' => 1,
-            'activationEmailTpl' => $this->login->config['testsPath'].'Data/Register/5796-activation-email.chunk.tpl',
-            'activationEmailSubject' => 'Thanks for Registering!',
+            'submitVar' => 'unit-test-register-btn',
             'submittedResourceId' => 1,
-            'validate' => 'nospam:blank,
-        username:required:minLength=^6^,
-        password:required:minLength=^6^,
-        password_confirm:password_confirm=^password^,
-        fullname:required,
-        email:required:email',
-            'placeholderPrefix' => 'reg.',
+            'usernameField' => 'email',
+            'emailField' => 'email',
+            'validate' => 'nospam:blank',
         ));
 
         $_POST = array(
-            'username' => 'unit-test-user-5796',
-            'registerbtn' => 1,
-            'email' => '',
-            'password' => '',
+            'unit-test-register-btn' => 1,
+            'email' => 'shaun+test@modx.com',
+            'fullname' => 'unit-test-register-fullname',
+            'password' => '123456789',
             'nospam' => '',
         );
         $this->controller->loadDictionary();
@@ -58,7 +49,7 @@ class RegisterForm5796Test extends LoginTestCase {
     public function tearDown() {
         /** @var modUser $user */
         $user = $this->modx->getObject('modUser',array(
-            'username' => 'unit-test-user-5796',
+            'username' => 'shaun+test@modx.com',
         ));
         if ($user) {
             $user->remove();
@@ -73,6 +64,9 @@ class RegisterForm5796Test extends LoginTestCase {
      */
     public function testForm() {
         $this->controller->process();
-        $this->assertTrue($this->login->controller->validator->hasErrorsInField('email'));
+        $exists = $this->modx->getCount('modUser',array(
+            'username' => 'shaun+test@modx.com',
+        ));
+        $this->assertTrue($exists > 0);
     }
 }

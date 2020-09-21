@@ -47,6 +47,7 @@ class RegisterProcessorTest extends LoginTestCase {
             'id' => 12345678,
             'username' => 'unit.test.user',
             'password' => md5('a test password'),
+            'fullname' => 'unit.test.fullname',
             'cachepwd' => '',
             'class_key' => 'modUser',
             'active' => false,
@@ -76,6 +77,7 @@ class RegisterProcessorTest extends LoginTestCase {
 
         $_POST = array(
             'username' => 'unit.test.user',
+            'fullname' => 'unit.test.fullname',
             'password' => 'a test password',
             'email' => 'test@test.com',
             'nospam' => '',
@@ -139,7 +141,7 @@ class RegisterProcessorTest extends LoginTestCase {
      */
     public function testSetUserGroups($userGroups = '',array $expected = array()) {
         $this->controller->setProperty('usergroups',$userGroups);
-        $addedUserGroups = $this->processor->setUserGroups();
+        $addedUserGroups = $this->processor->setUserGroups('');
         $this->assertEquals($expected,$addedUserGroups);
     }
     public function providerSetUserGroups() {
@@ -250,7 +252,7 @@ class RegisterProcessorTest extends LoginTestCase {
      * @depends testSetUserFields
      */
     public function testPostHooks() {
-        $this->controller->setProperty('postHooks',$this->login->config['testsPath'].'Hooks/Post/posthooktest.register.php');
+        $this->controller->setProperty('postHooks', dirname(dirname(dirname(__FILE__))) . '/Hooks/Post/posthooktest.register.php');
         $this->processor->setUserFields();
         $this->processor->setExtended();
         $this->processor->runPostHooks();

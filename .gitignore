@@ -2,8 +2,8 @@ _build/build.config.php
 config.core.php
 .idea
 nbproject/
-core/components/login/test/config.inc.php
-core/components/login/test/properties.inc.php
+test/config.inc.php
+test/properties.inc.php
 _packages/*.*
 !_packages/.gitignore
 !_packages/*.zip

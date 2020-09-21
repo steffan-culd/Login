@@ -36,6 +36,7 @@ class ForgotPasswordForm5794Test extends LoginTestCase {
 
         $_POST = array(
             'username' => 'unit-test-user-5794',
+            'fullname' => 'unit-test-fullname-5794',
             'registerbtn' => 1,
             'email' => LoginTestHarness::$properties['email'],
             'password' => '123456789',
