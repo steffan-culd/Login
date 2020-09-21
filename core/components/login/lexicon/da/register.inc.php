@@ -59,4 +59,5 @@ $_lang['register.use_stronger_password'] = 'Din adgangskode er ikke sikker nok. 
 $_lang['register.user_err_save'] = 'Der skete en fejl under forsøget på at gemme brugeren.';
 $_lang['register.username'] = 'Brugernavn';
 $_lang['register.username_taken'] = 'Brugernavnet er optaget. Vælg venligst et andet.';
+$_lang['register.username_traversal'] = 'Directory traversal attempt in the username. Please choose a different username.';
 $_lang['register.validation_error_message'] = 'A form validation error occurred. Please check the values you have entered.';

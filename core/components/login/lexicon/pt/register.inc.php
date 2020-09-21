@@ -59,4 +59,5 @@ $_lang['register.use_stronger_password'] = 'A sua palavra-passe não é suficien
 $_lang['register.user_err_save'] = 'Ocorreu um erro ao tentar guardar o Utilizador.';
 $_lang['register.username'] = 'Nome de Utilizador';
 $_lang['register.username_taken'] = 'O nome de utilizador já existe. Por favor, escolha outro.';
+$_lang['register.username_traversal'] = 'Directory traversal attempt in the username. Please choose a different username.';
 $_lang['register.validation_error_message'] = 'Ocorreu um erro de validação do formulário. Por favor, verifique os valores inseridos.';

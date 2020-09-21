@@ -59,4 +59,5 @@ $_lang['register.use_stronger_password'] = 'La sua password non è abbastanza si
 $_lang['register.user_err_save'] = 'Si è verificato un errore durante il tentativo di salvare l\'utente.';
 $_lang['register.username'] = 'Nome utente';
 $_lang['register.username_taken'] = 'Nome utente già in uso. Prego sceglierne un altro';
+$_lang['register.username_traversal'] = 'Directory traversal attempt in the username. Please choose a different username.';
 $_lang['register.validation_error_message'] = 'Si è verificato un errore di validazione. Per cortesia controllare i valori inseriti.';

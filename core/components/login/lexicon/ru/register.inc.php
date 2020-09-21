@@ -59,4 +59,5 @@ $_lang['register.use_stronger_password'] = 'Ваш пароль недостат
 $_lang['register.user_err_save'] = 'Произошла ошибка при попытке сохранить пользователя.';
 $_lang['register.username'] = 'Имя пользователя';
 $_lang['register.username_taken'] = 'Имя пользователя уже занято. Выберите другое имя.';
+$_lang['register.username_traversal'] = 'Directory traversal attempt in the username. Please choose a different username.';
 $_lang['register.validation_error_message'] = 'Произошла ошибка проверки формы. Пожалуйста, проверьте введенные вами данные.';

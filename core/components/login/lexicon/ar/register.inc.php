@@ -59,4 +59,5 @@ $_lang['register.use_stronger_password'] = 'Your password is not strong enough. 
 $_lang['register.user_err_save'] = 'An error occurred while trying to save the User.';
 $_lang['register.username'] = 'Username';
 $_lang['register.username_taken'] = 'Username already taken. Please choose another.';
+$_lang['register.username_traversal'] = 'Directory traversal attempt in the username. Please choose a different username.';
 $_lang['register.validation_error_message'] = 'A form validation error occurred. Please check the values you have entered.';

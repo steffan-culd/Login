@@ -59,4 +59,5 @@ $_lang['register.use_stronger_password'] = 'Het wachtwoord is niet sterk genoeg.
 $_lang['register.user_err_save'] = 'Er is een fout opgetreden bij het opslaan van de gebruiker.';
 $_lang['register.username'] = 'Gebruikersnaam';
 $_lang['register.username_taken'] = 'Gebruikersnaam bestaat reeds. Kies een alternatief.';
+$_lang['register.username_traversal'] = 'Directory traversal attempt in the username. Please choose a different username.';
 $_lang['register.validation_error_message'] = 'A form validation error occurred. Please check the values you have entered.';
