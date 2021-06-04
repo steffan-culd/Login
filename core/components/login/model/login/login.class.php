@@ -179,7 +179,7 @@ class Login {
         $this->modx->mail->reset();
 
         if (!$sent) {
-            $this->modx->log(\modX::LOG_LEVEL_ERROR, '[Login] '.$this->modx->lexicon('register.email_not_sent').' '.print_r($this->modx->mail->mailer->ErrorInfo, true));
+            $this->modx->log(modX::LOG_LEVEL_ERROR, '[Login] '.$this->modx->lexicon('register.email_not_sent').' '.print_r($this->modx->mail->mailer->ErrorInfo, true));
         }
 
         return $sent;
