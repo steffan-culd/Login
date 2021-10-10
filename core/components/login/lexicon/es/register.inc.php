@@ -29,7 +29,7 @@
 $_lang['register.activation_email_subject'] = 'Gracias por registrarse. ¡Por favor active su cuenta!';
 $_lang['register.email'] = 'Correo Electrónico';
 $_lang['register.email_invalid'] = 'Por favor introduzca una dirección de correo electrónico válida.';
-$_lang['register.email_invalid_domain'] = 'Su dirección de correo electrónico no tiene un nombre de dominio válido';
+$_lang['register.email_invalid_domain'] = 'Su dirección de correo electrónico no tiene un nombre de dominio válido.';
 $_lang['register.email_no_recipient'] = 'Ningún destinatario especificado para el correo electrónico.';
 $_lang['register.email_not_sent'] = 'Ocurrió un error al intentar enviar el correo electrónico.';
 $_lang['register.email_taken'] = 'La dirección de correo electrónico "[[+email]]" ya esta en uso. Asegúrese de que no se haya registrado anteriormente, y si no es así, por favor especifique otra dirección de correo electrónico.';
@@ -59,5 +59,5 @@ $_lang['register.use_stronger_password'] = 'Su contraseña no es lo suficienteme
 $_lang['register.user_err_save'] = 'Ha ocurrido un error al intentar guardar el usuario.';
 $_lang['register.username'] = 'Nombre de usuario';
 $_lang['register.username_taken'] = 'Nombre de usuario ya está en uso. Por favor, elige otro.';
-$_lang['register.username_traversal'] = 'Directory traversal attempt in the username. Please choose a different username.';
-$_lang['register.validation_error_message'] = 'A form validation error occurred. Please check the values you have entered.';
+$_lang['register.username_traversal'] = 'Intento de cruce de directorios en el nombre de usuario. Por favor, elija un nombre de usuario diferente.';
+$_lang['register.validation_error_message'] = 'Se ha producido un error de validación del formulario. Por favor, compruebe los valores que ha introducido.';
