@@ -29,14 +29,14 @@
 $_lang['login.email'] = 'E-mail';
 $_lang['login.forgot_password'] = 'Glemt adganskode';
 $_lang['login.forgot_password_email_subject'] = 'Glemt adganskode email';
-$_lang['login.forgot_password_email_text'] = '<p>Hello [[+username]],</p>
-<p>to activate your new password, please click on the following link:</p>
-<p><a href="[[+confirmUrl]]">[[+confirmUrl]]</a></p>
-<p>If successful, you can use the following password to login:</p>
-<p><strong>Password:</strong> [[+password]]</p>
-<p>If you did not request this message, please ignore it.</p>
-<p>Thanks,<br />
-<em>[[++site_name]] Site Administration</em></p>';
+$_lang['login.forgot_password_email_text'] = '<p> Hej [[+username]],</p>
+<p> for at aktivere din nye adgangskode, skal du klikke på følgende link:</p>
+<p> <a href="[[+confirmUrl]]"> [[+confirmUrl]] </a> </p>
+<p> Hvis det lykkes, kan du bruge følgende adgangskode til at logge ind:</p>
+<p> <strong> Adgangskode:</strong> [[+adgangskode]]</p>
+<p> Hvis du ikke har anmodet om denne meddelelse, skal du ignorere den. </p>
+<p> Tak,<br />
+<em> [[++site_name]] Administration af websted</em></p>';
 $_lang['login.or_forgot_username'] = 'Eller, glemt dit brugernavn?';
 $_lang['login.reset_password'] = 'Nulstil adgangskode';
 $_lang['login.username'] = 'Brugernavn';
