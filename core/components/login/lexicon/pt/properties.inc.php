@@ -38,7 +38,6 @@ $_lang['prop_forgotpassword.errtpltype_desc'] = 'O tipo de tpl a usar para o err
 $_lang['prop_forgotpassword.emailsubject_desc'] = 'O assunto para o email da palavra-passe esquecida.';
 $_lang['prop_forgotpassword.emailtplalt_desc'] = '(Opcional) Alternativa de texto plano para o tpl da mensagem de confirmação de e-mail.';
 $_lang['prop_forgotpassword.resetresourceid_desc'] = 'Página (recurso) a redirecionar os utilizadores no email de confirmação, onde está a chamada para o snippet de ResetPassword.';
-
 /* Login snippet */
 $_lang['prop_login.actionkey_desc'] = 'A variável REQUEST que indica que ação deve ser tomada.';
 $_lang['prop_login.loginkey_desc'] = 'A chave de ação do início de sessão.';
@@ -62,12 +61,10 @@ $_lang['prop_login.redirecttoonfailedauth_desc'] = 'Se definido um número difer
 $_lang['prop_login.remembermekey_desc'] = 'Opcional. O nome do campo do botão "Lembrar-me" para preservar o estado de início de sessão. A pré-definição é `rememberme`.';
 $_lang['prop_login.contexts_desc'] = '(Experimental) Uma lista separada por vírgulas com os contextos onde iniciar a sessão. A pré-definição será o contexto atual se não estiver definido explicitamente.';
 $_lang['prop_login.toplaceholder_desc'] = 'Se definido, irá definir o output do snippet de login para um placeholder com este nome, em vez de entregar diretamente o conteúdo.';
-
 /* Profile snippet */
 $_lang['prop_profile.prefix_desc'] = 'Uma string de prefixo para todos os placeholders de campos que serão definidos por este Snippet.';
 $_lang['prop_profile.user_desc'] = 'Opcional. Ou um ID de utilizador ou um nome de utilizador. Se definido, este utilizador será utilizado em vez do utilizador autenticado no momento.';
 $_lang['prop_profile.useextended_desc'] = 'Se deseja ou não definir quaisquer campos adicionais no formulário dos Perfis estendidos. Isto pode ser útil para armazenar campos adicionais dos utilizadores.';
-
 /* Register snippet */
 $_lang['prop_register.submitvar_desc'] = 'A variável a verificar para carregar a funcionalidade Register. Se vazio ou definido como falso, a funcionalidade Register processará o formulário em todos os pedidos do POST.';
 $_lang['prop_register.usergroups_desc'] = 'Opcional. Uma lista separada por vírgulas dos nomes de grupos de utilizadores, ou IDs a adicionar o utilizador recém-registado.';
@@ -111,7 +108,7 @@ $_lang['prop_register.maximumPossibleStrongerPasswords_desc'] = 'Se ensurePasswo
 $_lang['prop_register.ensurePasswordStrengthSuggestions_desc'] = 'Se ensurePasswordStrength estiver definida como "Sim", e se a palavra-passe falhar no teste de força, o Register irá fornecer tantas sugestões ao utilizador para a sua palavra-passe quantas as necessárias.';
 $_lang['prop_register.allowedfields_desc'] = 'Se definido, irá limitar os campos que são permitidos a serem definidos no utilizador recém-criado para esta lista separada por vírgulas. Também restringe os campos estendidos.';
 $_lang['prop_register.removeexpiredregistrations_desc'] = 'Se verdadeiro, irá remover utilizadores registados que expiraram, que não foram utilizados ou que nunca foram ativados. É recomendado deixar esta opção ativada para evitar spam.';
-$_lang['prop_register.preservefieldsafterregister_desc'] = 'Se verdadeiro, os dados dos campos de registo serão guardados após o registo com sucesso. Para redefinir os dados dos campos, defina como "falso"';
+$_lang['prop_register.preservefieldsafterregister_desc'] = 'Se verdadeiro, os dados dos campos de registo serão guardados após o registo com sucesso. Para redefinir os dados dos campos, defina como "falso".';
 $_lang['prop_register.redirectUnsetDefaultParam_desc'] = 'Se for verdadeiro, os parâmetros pré-definidos serão removidos dos URLs redirecionados.';
 $_lang['opt_register.chunk'] = 'Pedaço (Chunk)';
 $_lang['opt_register.file'] = 'Ficheiro';
@@ -123,7 +120,6 @@ $_lang['opt_register.red'] = 'Vermelho';
 $_lang['opt_register.white'] = 'Branco';
 $_lang['opt_register.asc'] = 'Ascendente';
 $_lang['opt_register.desc'] = 'Descendente';
-
 /* ConfirmRegister snippet */
 $_lang['prop_confirmregister.redirectto_desc'] = 'Opcional. Após uma confirmação bem sucedida, redirecionar para esta página (Recurso).';
 $_lang['prop_confirmregister.redirectparams_desc'] = 'Opcional. Um objeto JSON de parâmetros a serem passados ao redirecionar utilizando o redirectTo.';
@@ -132,12 +128,10 @@ $_lang['prop_confirmregister.authenticate_desc'] = 'Autenticar e logar o utiliza
 $_lang['prop_confirmregister.authenticatecontexts_desc'] = 'Opcional. Uma lista de contextos separados por vírgulas para autenticar. O padrão é o contexto atual.';
 $_lang['prop_confirmregister.errorpage_desc'] = 'Opcional. Se definido, redirecionará os utilizadores para uma página de erro personalizada se eles tentarem aceder à página de confirmação com algum erro de validação.';
 $_lang['prop_confirmregister.activepage_desc'] = 'Opcional. Se definido, redirecionará os utilizadores para uma página de erro de conta ativa se eles tentarem aceder à página de confirmação de registo com uma conta já ativada.';
-
 /* ResetPassword snippet */
 $_lang['prop_resetpassword.tpl_desc'] = 'O TPL da mensagem de reposição de palavra-passe.';
 $_lang['prop_resetpassword.tpltype_desc'] = 'O tipo de tpl a ser fornecido. A pré-definição é um Chunk.';
 $_lang['prop_resetpassword.loginresourceid_desc'] = 'A página (Recurso) para redirecionar os utilizadores numa confirmação bem sucedida.';
-
 /* UpdateProfile snippet */
 $_lang['prop_updateprofile.allowedextendedfields_desc'] = 'Opcional. Se definido, irá restringir os campos que são atualizados nos campos estendidos para os nomes dos campos nesta lista separada por vírgulas.';
 $_lang['prop_updateprofile.allowedfields_desc'] = 'Opcional. Se definido, irá restringir os campos que são atualizados nos nomes de campos nesta lista separada por vírgulas.';
@@ -152,7 +146,6 @@ $_lang['prop_updateprofile.submitvar_desc'] = 'A variável a verificar para carr
 $_lang['prop_updateprofile.syncusername_desc'] = 'Se definido para um nome de coluna no perfil, o UpdateProfile tentará sincronizar o nome de utilizador para este campo após um evento "guardar" bem sucedido.';
 $_lang['prop_updateprofile.useextended_desc'] = 'Se deseja ou não definir quaisquer campos adicionais no formulário dos Perfis estendidos. Isto pode ser útil para armazenar campos adicionais dos utilizadores.';
 $_lang['prop_updateprofile.user_desc'] = 'Opcional. Se especificado, carregará o utilizador com o ID especificado ou nome de utilizador em vez do utilizador ativo.';
-
 /* ChangePassword snippet */
 $_lang['prop_changepassword.submitvar_desc'] = 'A variável a verificar para carregar a funcionalidade ChangePassword. Se vazio ou definido como falso, a funcionalidade ChangePassword processará o formulário em todos os pedidos do POST.';
 $_lang['prop_changepassword.fieldoldpassword_desc'] = 'O nome do campo para o campo da palavra-passe antiga.';
@@ -162,14 +155,12 @@ $_lang['prop_changepassword.prehooks_desc'] = 'Quais os scripts a executar, se e
 $_lang['prop_changepassword.posthooks_desc'] = 'Quais os scripts a executar, se existirem, após um utilizador estar registado. Isto pode ser uma lista de hooks, separados por vírgulas. Se o primeiro falhar, os seguintes não serão executados. Um hook também pode ser um nome de um Snippet que executará o respetivo Snippet.';
 $_lang['prop_changepassword.redirecttologin_desc'] = 'Se um utilizador não estiver autenticado e aceder esta página (Recurso), redireciona-o para a página (Recurso) "página não autorizada".';
 $_lang['prop_changepassword.reloadonsuccess_desc'] = 'Se verdadeiro, a página irá redirecionar para si própria com um parâmetro GET para evitar duplas submissões. Se falso, simplesmente irá definir um placeholder de sucesso.';
-$_lang['prop_changepassword.successmessage_desc'] = 'Se o reloadOnSuccess estiver definido como falso, irá mostrar esta mensagem no placeholder [prefix].successMessage';
+$_lang['prop_changepassword.successmessage_desc'] = 'Se o reloadOnSuccess estiver definido como falso, irá mostrar esta mensagem no placeholder [prefix].successMessage.';
 $_lang['prop_changepassword.placeholderprefix_desc'] = 'O prefixo a ser utilizado em todos os placeholders definidos por este snippet.';
-
 /* isLoggedIn snippet */
 $_lang['prop_isloggedin.contexts_desc'] = 'Uma lista separada por vírgulas de contextos para verificar o estado de autenticação. Se não definido, o contexto atual será considerado como o pré-definido.';
 $_lang['prop_isloggedin.redirectto_desc'] = 'O ID de uma página (Recurso) para redirecionar um utilizador não autenticado. A pré-definição será para a configuração unauthorized_page.';
 $_lang['prop_isloggedin.redirectparams_desc'] = 'Se utilizar o redirectTo, um objeto JSON de parâmetros REQUEST para enviar com o redirecionamento.';
-
 /* ActiveUsers snippet */
 $_lang['prop_activeusers.tpl'] = 'O Chunk a utilizar para apresentar cada utilizador ativo.';
 $_lang['prop_activeusers.tplType'] = 'O tipo de tpl a ser fornecido. A pré-definição é um Chunk.';
