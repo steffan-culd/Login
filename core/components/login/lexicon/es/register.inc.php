@@ -27,7 +27,7 @@
  * @subpackage lexicon
  */
 $_lang['register.activation_email_subject'] = 'Gracias por registrarse. ¡Por favor active su cuenta!';
-$_lang['register.email'] = 'Email';
+$_lang['register.email'] = 'Correo Electrónico';
 $_lang['register.email_invalid'] = 'Por favor introduzca una dirección de correo electrónico válida.';
 $_lang['register.email_invalid_domain'] = 'Su dirección de correo electrónico no tiene un nombre de dominio válido';
 $_lang['register.email_no_recipient'] = 'Ningún destinatario especificado para el correo electrónico.';
