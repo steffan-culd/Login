@@ -27,16 +27,16 @@
  * @subpackage lexicon
  */
 $_lang['login.email'] = 'E-mail';
-$_lang['login.forgot_password'] = 'Zapomněli jste heslo?';
+$_lang['login.forgot_password'] = 'Zapomenuté heslo';
 $_lang['login.forgot_password_email_subject'] = 'E-mail se zapomenutým heslem';
-$_lang['login.forgot_password_email_text'] = '<p>Hello [[+username]],</p>
-<p>to activate your new password, please click on the following link:</p>
+$_lang['login.forgot_password_email_text'] = '<p>Dobrý den [[+username]],</p>
+<p>pro aktivaci nového hesla klikněte na následující odkaz:</p>
 <p><a href="[[+confirmUrl]]">[[+confirmUrl]]</a></p>
-<p>If successful, you can use the following password to login:</p>
+<p>Pokud se vám to podaří, můžete pro přihlášení použít následující heslo:</p>
 <p><strong>Password:</strong> [[+password]]</p>
-<p>If you did not request this message, please ignore it.</p>
-<p>Thanks,<br />
-<em>[[++site_name]] Site Administration</em></p>';
+<p>Pokud jste si tuto zprávu nevyžádali, ignorujte ji.</p>
+<p> Díky,<br />
+<em>[[++site_name]] Správa webu</em></p>';
 $_lang['login.or_forgot_username'] = 'Nebo jste zapomněli uživatelské jméno?';
 $_lang['login.reset_password'] = 'Resetovat heslo';
 $_lang['login.username'] = 'Uživatelské jméno';
