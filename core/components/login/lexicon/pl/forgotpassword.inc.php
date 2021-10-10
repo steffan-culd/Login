@@ -28,17 +28,17 @@
  */
 $_lang['login.email'] = 'Adres e-mail';
 $_lang['login.forgot_password'] = 'Zapomniałem hasła';
-$_lang['login.forgot_password_email_subject'] = 'Password Retrieval Email';
-$_lang['login.forgot_password_email_text'] = '<p>Hello [[+username]],</p>
-<p>to activate your new password, please click on the following link:</p>
+$_lang['login.forgot_password_email_subject'] = 'Email odzyskiwania hasła';
+$_lang['login.forgot_password_email_text'] = '<p>Witaj [[+username]],</p>
+<p>aby aktywować nowe hasło, kliknij poniższy link:</p>
 <p><a href="[[+confirmUrl]]">[[+confirmUrl]]</a></p>
-<p>If successful, you can use the following password to login:</p>
-<p><strong>Password:</strong> [[+password]]</p>
-<p>If you did not request this message, please ignore it.</p>
-<p>Thanks,<br />
-<em>[[++site_name]] Site Administration</em></p>';
-$_lang['login.or_forgot_username'] = 'Or, forgot your username?';
-$_lang['login.reset_password'] = 'Zresetuj hasło';
+<p>Jeśli się powiedzie, możesz użyć następującego hasła, aby się zalogować:</p>
+<p><strong>Hasło:</strong> [[+password]]</p>
+<p>Jeśli nie zażądałeś tej wiadomości, zignoruj ją.</p>
+<p>Dzięki,<br />
+<em>[[++site_name]] Administracja witryny</em></p>';
+$_lang['login.or_forgot_username'] = 'A może zapomniałeś swojej nazwy użytkownika?';
+$_lang['login.reset_password'] = 'Resetuj hasło';
 $_lang['login.username'] = 'Nazwa użytkownika';
-$_lang['login.user_err_nf_email'] = 'If the user or email exists, you\'ll receive an email shortly.';
-$_lang['login.user_err_nf_username'] = 'If the user or email exists, you\'ll receive an email shortly.';
+$_lang['login.user_err_nf_email'] = 'Jeśli użytkownik lub adres e-mail istnieje, wkrótce otrzymasz wiadomość e-mail.';
+$_lang['login.user_err_nf_username'] = 'Jeśli użytkownik lub adres e-mail istnieje, wkrótce otrzymasz wiadomość e-mail.';
