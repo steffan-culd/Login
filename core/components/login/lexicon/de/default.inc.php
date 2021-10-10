@@ -26,10 +26,10 @@
  * @package login
  * @subpackage lexicon
  */
-$_lang['login'] = 'Login';
+$_lang['login'] = 'Einloggen';
 $_lang['login.invalid_post'] = 'Ungültige WebLogin POST Aktion: [[+action]]';
-$_lang['login.login_err'] = 'Unbekannter Fehler anmelden!';
-$_lang['login.logout'] = 'Logout';
+$_lang['login.login_err'] = 'Unbekannter Fehler beim Einloggen!';
+$_lang['login.logout'] = 'Ausloggen';
 $_lang['login.logout_err'] = 'Unbekannter Fehler beim Ausloggen!';
 $_lang['login.password'] = 'Passwort';
 $_lang['login.recaptcha_err_load'] = 'Konnte die reCaptcha Service Klasse nicht laden.';
