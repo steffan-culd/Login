@@ -26,7 +26,7 @@
  * @package login
  * @subpackage lexicon
  */
-$_lang['login.address'] = 'Адрес магазина:';
+$_lang['login.address'] = 'Адрес магазина';
 $_lang['login.city'] = 'Город';
 $_lang['login.country'] = 'Страна';
 $_lang['login.email'] = 'Электронная почта';
