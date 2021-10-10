@@ -37,7 +37,7 @@ $_lang['login.forgot_password_email_text'] = '<p>Salve [[+username]],</p>
 <p>Se non ha richiesto questo messaggio, puo ignorarlo.</p>
 <p>Grazie,<br />
 <em>[[++site_name]] L\'amministratore del sito</em></p>';
-$_lang['login.or_forgot_username'] = 'O, dimenticato il nome utente';
+$_lang['login.or_forgot_username'] = 'Oppure, hai dimenticato il tuo nome utente?';
 $_lang['login.reset_password'] = 'Resetta la password';
 $_lang['login.username'] = 'Nome utente';
 $_lang['login.user_err_nf_email'] = 'Se esiste l\'utente o l\'email, riceverà una mail a breve.';

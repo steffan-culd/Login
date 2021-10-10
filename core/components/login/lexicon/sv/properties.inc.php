@@ -38,7 +38,6 @@ $_lang['prop_forgotpassword.errtpltype_desc'] = 'Typ av mall att använda för e
 $_lang['prop_forgotpassword.emailsubject_desc'] = 'Ämne för glömt lösenord meddelandet.';
 $_lang['prop_forgotpassword.emailtplalt_desc'] = '(Valfri) Klartext alternativ till bekräftelsemeddelandets e-post mall.';
 $_lang['prop_forgotpassword.resetresourceid_desc'] = 'Resursen att hänvisa användare till i bekräftelsemeddelandet, där ResetPassword snippeten anropas.';
-
 /* Login snippet */
 $_lang['prop_login.actionkey_desc'] = 'REQUEST variabeln som indikerar vilken åtgärd som ska vidtas.';
 $_lang['prop_login.loginkey_desc'] = 'Åtgärdsnyckel för inloggning.';
@@ -62,12 +61,10 @@ $_lang['prop_login.redirecttoonfailedauth_desc'] = 'Om satt till ett numeriskt v
 $_lang['prop_login.remembermekey_desc'] = 'Valfritt. Namnet på det fält som används till "Kom ihåg mig"-kryssrutan för att bevara inloggningsläget. Standardvärdet är `rememberme`.';
 $_lang['prop_login.contexts_desc'] = '(Experimentellt) En komma-separerad lista på kontexter att logga in till. Som standard används aktuell kontext om värdet inte är satt.';
 $_lang['prop_login.toplaceholder_desc'] = 'Om angivet kommer utskriften från Login snippeten att lagras i en platshållare vid detta namn istället för direktutskrift av det returnerade innehållet.';
-
 /* Profile snippet */
 $_lang['prop_profile.prefix_desc'] = 'En sträng att använda som prefix för alla platshållare för fält som blir satta av denna Snippet.';
 $_lang['prop_profile.user_desc'] = 'Valfritt. Antingen ett användar-ID eller användarnamn. Om angivet kommer denna användare att användas istället för den just nu inloggade.';
 $_lang['prop_profile.useextended_desc'] = 'Om extra fält i formuläret skall lagras i profilens extended fält. Detta kan vara användbart för att lagra ytterligare användarfält.';
-
 /* Register snippet */
 $_lang['prop_register.submitvar_desc'] = 'Variabeln att leta efter för att ladda Register funktionaliteten. Om den lämnas tom eller är satt till false, kommer Register att behandla formuläret i alla POST förfrågningar.';
 $_lang['prop_register.usergroups_desc'] = 'Valfritt. En komma-separerad lista på användargruppnamn eller IDn att lägga till den ny-registrerade användaren i.';
@@ -123,7 +120,6 @@ $_lang['opt_register.red'] = 'Röd';
 $_lang['opt_register.white'] = 'Vit';
 $_lang['opt_register.asc'] = 'Stigande';
 $_lang['opt_register.desc'] = 'Fallande';
-
 /* ConfirmRegister snippet */
 $_lang['prop_confirmregister.redirectto_desc'] = 'Valfritt. Efter lyckad bekräftelse, omdirigera till denna resurs.';
 $_lang['prop_confirmregister.redirectparams_desc'] = 'Valfritt. Ett JSON objekt med parametrar att förmedla vid omdirigering genom redirectTo.';
@@ -132,12 +128,10 @@ $_lang['prop_confirmregister.authenticate_desc'] = 'Autentisera och logga in anv
 $_lang['prop_confirmregister.authenticatecontexts_desc'] = 'Valfritt. En komma-separerad lista på kontexter att autentisera till. Standard är den aktuella kontexten.';
 $_lang['prop_confirmregister.errorpage_desc'] = 'Valfritt. Om angivet, omdirigeras användaren till en anpassad felmeddelandesida om de försöker komma åt denna sida efter att ha aktiverat sitt konto.';
 $_lang['prop_confirmregister.activepage_desc'] = 'Valfritt. Om angivet, omdirigeras användaren till en aktiv felmeddelandesida om de försöker komma åt sidan för att bekräfta registreringen med ett konto som redan är aktiverat.';
-
 /* ResetPassword snippet */
 $_lang['prop_resetpassword.tpl_desc'] = 'Mall för meddelandet nollställ lösenord.';
 $_lang['prop_resetpassword.tpltype_desc'] = 'Typ av mall som förses. Standard är en Chunk.';
 $_lang['prop_resetpassword.loginresourceid_desc'] = 'Resursen att hänvisa användare till vid lyckad bekräftelse.';
-
 /* UpdateProfile snippet */
 $_lang['prop_updateprofile.allowedextendedfields_desc'] = 'Valfritt. Om angivet begränsas fälten som uppdateras i Extended fälten till namnet på fält i denna komma-separerade lista.';
 $_lang['prop_updateprofile.allowedfields_desc'] = 'Valfritt. Om angivet begränsas fälten som uppdateras till namnet på fält i denna komma-separerade lista.';
@@ -152,7 +146,6 @@ $_lang['prop_updateprofile.submitvar_desc'] = 'Variabeln att leta efter för att
 $_lang['prop_updateprofile.syncusername_desc'] = 'Om satt till ett kolumnnamn i Profilen, kommer UpdateProfile att försöka synka användarnamnet till detta fält efter lyckad lagring.';
 $_lang['prop_updateprofile.useextended_desc'] = 'Om extra fält i formuläret skall lagras i profilens extended fält. Detta kan vara användbart för att lagra ytterligare användarfält.';
 $_lang['prop_updateprofile.user_desc'] = 'Valfritt. Om angivet laddas användaren med det angivna IDt eller användarnamnet istället för den aktuella användaren.';
-
 /* ChangePassword snippet */
 $_lang['prop_changepassword.submitvar_desc'] = 'Variabeln att leta efter för att ladda ChangePassword funktionaliteten. Om tomt eller satt till false kommer ChangePassword att behandla formuläret vid alla POST förfrågningar.';
 $_lang['prop_changepassword.fieldoldpassword_desc'] = 'Namnet på fältet för det gamla lösenordet.';
@@ -164,12 +157,10 @@ $_lang['prop_changepassword.redirecttologin_desc'] = 'Om en användare inte är 
 $_lang['prop_changepassword.reloadonsuccess_desc'] = 'Om sant, kommer sidan att hänvisa till sig självt med en GET parameter för att förhindra dubbelförsändelser. Om falskt kommer den bara sätta en success platshållare.';
 $_lang['prop_changepassword.successmessage_desc'] = 'Om reloadOnSuccess är satt till false, skrivs detta meddelande ut i [prefix].successMessage platshållaren.';
 $_lang['prop_changepassword.placeholderprefix_desc'] = 'Prefix som skall användas till alla platshållare satta av denna snippet.';
-
 /* isLoggedIn snippet */
 $_lang['prop_isloggedin.contexts_desc'] = 'En komma-separerad lista med kontexter för vilka autentiseringsstatus skall kontrolleras. Om inget är angivet, används aktuell kontext som standard.';
 $_lang['prop_isloggedin.redirectto_desc'] = 'ID för den resurs användaren skall omdirigeras till om användaren inte är inloggad. Som standard används unauthorized_page.';
 $_lang['prop_isloggedin.redirectparams_desc'] = 'Om redirectTo används, ett JSON objekt med REQUEST parametrar att skicka med vid omdirigering.';
-
 /* ActiveUsers snippet */
 $_lang['prop_activeusers.tpl'] = 'Den Chunk som skall användas vid utskrift av varje aktiv användare.';
 $_lang['prop_activeusers.tplType'] = 'Typ av mall som förses. Standard är en Chunk.';

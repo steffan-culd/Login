@@ -27,7 +27,7 @@
  * @subpackage lexicon
  */
 $_lang['login'] = 'Login';
-$_lang['login.invalid_post'] = 'WebLogin invalid POST action: [[+action]]';
+$_lang['login.invalid_post'] = 'WebLogin ugyldig POST-handling: [[+action]]';
 $_lang['login.login_err'] = 'Der skete en ukendt fejl under forsøget på at logge ind!';
 $_lang['login.logout'] = 'Log ud';
 $_lang['login.logout_err'] = 'Der skete en ukendt fejl undr forsøget på at logge ud!';

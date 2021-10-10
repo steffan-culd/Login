@@ -27,10 +27,10 @@
  * @subpackage lexicon
  */
 $_lang['login'] = 'Zaloguj się';
-$_lang['login.invalid_post'] = 'WebLogin invalid POST action: [[+action]]';
+$_lang['login.invalid_post'] = 'WebLogin nieprawidłowa akcja POST: [[+action]]';
 $_lang['login.login_err'] = 'Nieznany błąd logowania!';
 $_lang['login.logout'] = 'Wyloguj';
-$_lang['login.logout_err'] = 'Unknown error logging out!';
+$_lang['login.logout_err'] = 'Nieznany błąd wylogowania!';
 $_lang['login.password'] = 'Hasło';
-$_lang['login.recaptcha_err_load'] = 'Could not load reCaptcha service class.';
+$_lang['login.recaptcha_err_load'] = 'Nie można załadować klasy usługi reCaptcha.';
 $_lang['login.username'] = 'Nazwa użytkownika';

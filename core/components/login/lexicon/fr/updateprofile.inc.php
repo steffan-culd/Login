@@ -29,13 +29,13 @@
 $_lang['login.address'] = 'Addresse';
 $_lang['login.city'] = 'Ville';
 $_lang['login.country'] = 'Pays';
-$_lang['login.email'] = 'Email';
+$_lang['login.email'] = 'Adresse email';
 $_lang['login.email_taken'] = 'L\'adresse "[[+email]]" est déjà utilisée. Veuillez vous assurer de ne pas être déjà inscrit. Si ce n\'est pas le cas, veuillez indiquer une adresse différente.';
 $_lang['login.fax'] = 'Fax';
 $_lang['login.fullname'] = 'Nom complet';
 $_lang['login.mobilephone'] = 'Téléphone mobile';
 $_lang['login.phone'] = 'Téléphone';
-$_lang['login.profile_err_nf'] = 'Profil non trouvé!';
+$_lang['login.profile_err_nf'] = 'Profil non trouvé !';
 $_lang['login.profile_err_save'] = 'Une erreur est survenue lors de la mise à jour du profil.';
 $_lang['login.profile_updated'] = 'Profil mis à jour.';
 $_lang['login.state'] = 'État';

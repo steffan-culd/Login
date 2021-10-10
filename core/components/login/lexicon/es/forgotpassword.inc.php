@@ -26,19 +26,19 @@
  * @package login
  * @subpackage lexicon
  */
-$_lang['login.email'] = 'Email';
+$_lang['login.email'] = 'Correo Electrónico';
 $_lang['login.forgot_password'] = 'Olvidó su contraseña';
 $_lang['login.forgot_password_email_subject'] = 'Recupere su contraseña';
-$_lang['login.forgot_password_email_text'] = '<p>Hello [[+username]],</p>
-<p>to activate your new password, please click on the following link:</p>
-<p><a href="[[+confirmUrl]]">[[+confirmUrl]]</a></p>
-<p>If successful, you can use the following password to login:</p>
-<p><strong>Password:</strong> [[+password]]</p>
-<p>If you did not request this message, please ignore it.</p>
-<p>Thanks,<br />
-<em>[[++site_name]] Site Administration</em></p>';
+$_lang['login.forgot_password_email_text'] = '<p> Hola [[+username]],</p>
+<p>para activar su nueva contraseña, haga clic en el siguiente enlace:</p>
+<p> <a href="[[+confirmUrl]]"> [[+confirmUrl]] </a> </p>
+<p> Si tiene éxito, puede usar la siguiente contraseña para iniciar sesión:</p>
+<p> <strong> Contraseña:</strong> [[+password]]</p>
+<p> Si no ha pedido este mensaje, ignórelo. </p>
+<p> Gracias,<br />
+<em> [[++site_name]] Administración del sitio</em></p>';
 $_lang['login.or_forgot_username'] = '¿O, olvidó su nombre de usuario?';
 $_lang['login.reset_password'] = 'Restablecer contraseña';
-$_lang['login.username'] = 'Nombre de Usuario';
+$_lang['login.username'] = 'Nombre de usuario';
 $_lang['login.user_err_nf_email'] = 'Si existe su nombre de usuario o correo electrónico, en breve recibirá un correo electrónico.';
 $_lang['login.user_err_nf_username'] = 'Si existe su nombre de usuario o correo electrónico, en breve recibirá un correo electrónico.';

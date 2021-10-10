@@ -27,7 +27,7 @@
  * @subpackage lexicon
  */
 $_lang['login.email'] = 'Электронная почта';
-$_lang['login.forgot_password'] = 'Забыли пароль?';
+$_lang['login.forgot_password'] = 'Забыли пароль';
 $_lang['login.forgot_password_email_subject'] = 'Адрес электронной почты для восстановления пароля';
 $_lang['login.forgot_password_email_text'] = '<p>Здравствуйте [[+username]].</p>
 <p>Чтобы активировать ваш новый пароль, пожалуйста, перейдите по ссылке:</p>

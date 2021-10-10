@@ -38,7 +38,6 @@ $_lang['prop_forgotpassword.errtpltype_desc'] = 'The type of tpl to use for errT
 $_lang['prop_forgotpassword.emailsubject_desc'] = 'The subject of the forgot password email.';
 $_lang['prop_forgotpassword.emailtplalt_desc'] = '(Optional) Plain-text alternative for the confirmation email message tpl.';
 $_lang['prop_forgotpassword.resetresourceid_desc'] = 'The resource to direct users to in the confirmation email, where the ResetPassword snippet call is.';
-
 /* Login snippet */
 $_lang['prop_login.actionkey_desc'] = 'The REQUEST variable that indicates what action to take.';
 $_lang['prop_login.loginkey_desc'] = 'The login action key.';
@@ -62,12 +61,10 @@ $_lang['prop_login.redirecttoonfailedauth_desc'] = 'If set to a non-zero number,
 $_lang['prop_login.remembermekey_desc'] = 'Optional. The field name of the Remember Me toggle to preserve login state. Defaults to `rememberme`.';
 $_lang['prop_login.contexts_desc'] = '(Experimental) A comma-separated list of contexts to log in to. Defaults to the current context if not explicitly set.';
 $_lang['prop_login.toplaceholder_desc'] = 'If set, will set the output of the login snippet to a placeholder of this name rather than directly outputting the return contents.';
-
 /* Profile snippet */
 $_lang['prop_profile.prefix_desc'] = 'A string to prefix all placeholders for fields that will be set by this Snippet.';
 $_lang['prop_profile.user_desc'] = 'Optional. Either a user ID or username. If set, will use this user rather than the currently logged in one.';
 $_lang['prop_profile.useextended_desc'] = 'Whether or not to set any extra fields in the form to the Profiles extended field. This can be useful for storing extra user fields.';
-
 /* Register snippet */
 $_lang['prop_register.submitvar_desc'] = 'The var to check for to load the Register functionality. If empty or set to false, Register will process the form on all POST requests.';
 $_lang['prop_register.usergroups_desc'] = 'Optional. A comma-separated list of User Group names or IDs to add the newly-registered User to.';
@@ -111,7 +108,7 @@ $_lang['prop_register.maximumPossibleStrongerPasswords_desc'] = 'If ensurePasswo
 $_lang['prop_register.ensurePasswordStrengthSuggestions_desc'] = 'If ensurePasswordStrength is set to Yes, and the password fails the strength test, Register will supply this many number of suggestions to the user for their password.';
 $_lang['prop_register.allowedfields_desc'] = 'If set, will limit the fields that are allowed to be set on the newly created user to this comma-separated list. Also restricts extended fields.';
 $_lang['prop_register.removeexpiredregistrations_desc'] = 'If true, will remove registered users that have an expired, unused activation request and have never activated. It is recommended to leave this on to prevent spam.';
-$_lang['prop_register.preservefieldsafterregister_desc'] = 'If true, data of registration fields will be saved after successfull registration. To reset fields data, set to false';
+$_lang['prop_register.preservefieldsafterregister_desc'] = 'If true, data of registration fields will be saved after successfull registration. To reset fields data, set to false.';
 $_lang['prop_register.redirectUnsetDefaultParam_desc'] = 'If true, default parameters will be removed from redirected urls.';
 $_lang['opt_register.chunk'] = 'Chunk';
 $_lang['opt_register.file'] = 'File';
@@ -123,7 +120,6 @@ $_lang['opt_register.red'] = 'Red';
 $_lang['opt_register.white'] = 'White';
 $_lang['opt_register.asc'] = 'Ascending';
 $_lang['opt_register.desc'] = 'Descending';
-
 /* ConfirmRegister snippet */
 $_lang['prop_confirmregister.redirectto_desc'] = 'Optional. After a successful confirmation, redirect to this Resource.';
 $_lang['prop_confirmregister.redirectparams_desc'] = 'Optional. A JSON object of parameters to pass when redirecting using redirectTo.';
@@ -132,12 +128,10 @@ $_lang['prop_confirmregister.authenticate_desc'] = 'Authenticate and login the u
 $_lang['prop_confirmregister.authenticatecontexts_desc'] = 'Optional. A comma-separated list of contexts to authenticate to. Defaults to the current context.';
 $_lang['prop_confirmregister.errorpage_desc'] = 'Optional. If set, will redirect user to a custom error page if they try to access the confirm register page with some validation error.';
 $_lang['prop_confirmregister.activepage_desc'] = 'Optional. If set, will redirect user to a active error page if they try to access this the confirm register page with an already activated account.';
-
 /* ResetPassword snippet */
 $_lang['prop_resetpassword.tpl_desc'] = 'The reset password message tpl.';
 $_lang['prop_resetpassword.tpltype_desc'] = 'The type of tpl being provided. Defaults to a Chunk.';
 $_lang['prop_resetpassword.loginresourceid_desc'] = 'The resource to direct users to on successful confirmation.';
-
 /* UpdateProfile snippet */
 $_lang['prop_updateprofile.allowedextendedfields_desc'] = 'Optional. If set, will restrict the fields that are updated in the Extended fields to the names of fields in this comma-separated list.';
 $_lang['prop_updateprofile.allowedfields_desc'] = 'Optional. If set, will restrict the fields that are updated to the names of fields in this comma-separated list.';
@@ -152,7 +146,6 @@ $_lang['prop_updateprofile.submitvar_desc'] = 'The var to check for to load the 
 $_lang['prop_updateprofile.syncusername_desc'] = 'If set to a column name in the Profile, UpdateProfile will attempt to sync the username to this field after a successful save.';
 $_lang['prop_updateprofile.useextended_desc'] = 'Whether or not to set any extra fields in the form to the Profiles extended field. This can be useful for storing extra user fields.';
 $_lang['prop_updateprofile.user_desc'] = 'Optional. If specified, will load the user with the specified ID or username instead of the active user.';
-
 /* ChangePassword snippet */
 $_lang['prop_changepassword.submitvar_desc'] = 'The var to check for to load the ChangePassword functionality. If empty or set to false, ChangePassword will process the form on all POST requests.';
 $_lang['prop_changepassword.fieldoldpassword_desc'] = 'The field name of the old password field.';
@@ -164,12 +157,10 @@ $_lang['prop_changepassword.redirecttologin_desc'] = 'If a user is not logged in
 $_lang['prop_changepassword.reloadonsuccess_desc'] = 'If true, the page will redirect to itself with a GET parameter to prevent double-postbacks. If false, it will simply set a success placeholder.';
 $_lang['prop_changepassword.successmessage_desc'] = 'If reloadOnSuccess is set to false, output this message in the [prefix].successMessage placeholder.';
 $_lang['prop_changepassword.placeholderprefix_desc'] = 'The prefix to use for all placeholders set by this snippet.';
-
 /* isLoggedIn snippet */
 $_lang['prop_isloggedin.contexts_desc'] = 'A comma-separated list of contexts to check authenticated status for. If not set, will default to current context.';
 $_lang['prop_isloggedin.redirectto_desc'] = 'The ID of a Resource to redirect to should the user not be logged in. Will default to the unauthorized_page.';
 $_lang['prop_isloggedin.redirectparams_desc'] = 'If using redirectTo, a JSON object of REQUEST params to send with the redirect.';
-
 /* ActiveUsers snippet */
 $_lang['prop_activeusers.tpl'] = 'The Chunk to use for outputting each active user.';
 $_lang['prop_activeusers.tplType'] = 'The type of tpl being provided. Defaults to a Chunk.';

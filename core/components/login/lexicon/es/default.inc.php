@@ -27,10 +27,10 @@
  * @subpackage lexicon
  */
 $_lang['login'] = 'Iniciar sesión';
-$_lang['login.invalid_post'] = 'WebLogin invalid POST action: [[+action]]';
+$_lang['login.invalid_post'] = 'Acción POST inválida de WebLogin: [[+acción]]';
 $_lang['login.login_err'] = '¡Error desconocido iniciando sesión!';
 $_lang['login.logout'] = 'Cerrar Sesión';
 $_lang['login.logout_err'] = '¡Error desconocido cerrando sesión!';
 $_lang['login.password'] = 'Contraseña';
-$_lang['login.recaptcha_err_load'] = 'Could not load reCaptcha service class.';
+$_lang['login.recaptcha_err_load'] = 'No se ha podido cargar la clase de servicio reCaptcha.';
 $_lang['login.username'] = 'Nombre de usuario';

@@ -26,7 +26,7 @@
  * @package login
  * @subpackage lexicon
  */
-$_lang['register.activation_email_subject'] = 'Thanks for Registering. Please Activate!';
+$_lang['register.activation_email_subject'] = 'Bedankt voor het registreren. Activeer alstublieft!';
 $_lang['register.email'] = 'E-mail';
 $_lang['register.email_invalid'] = 'Vul een correct e-mailadres in.';
 $_lang['register.email_invalid_domain'] = 'Uw e-mailadres bevat niet een correcte domeinnaam.';
@@ -59,5 +59,5 @@ $_lang['register.use_stronger_password'] = 'Het wachtwoord is niet sterk genoeg.
 $_lang['register.user_err_save'] = 'Er is een fout opgetreden bij het opslaan van de gebruiker.';
 $_lang['register.username'] = 'Gebruikersnaam';
 $_lang['register.username_taken'] = 'Gebruikersnaam bestaat reeds. Kies een alternatief.';
-$_lang['register.username_traversal'] = 'Directory traversal attempt in the username. Please choose a different username.';
-$_lang['register.validation_error_message'] = 'A form validation error occurred. Please check the values you have entered.';
+$_lang['register.username_traversal'] = 'Directory traversal poging in de gebruikersnaam. Kies een andere gebruikersnaam.';
+$_lang['register.validation_error_message'] = 'Er is een formulier validatiefout opgetreden. Controleer de waarden die u hebt ingevoerd.';
