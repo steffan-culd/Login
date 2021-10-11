@@ -1,6 +1,11 @@
 Changelog for Login
 ===================
 
+Login 1.9.10
+------------------------------------
+- Log error if mail was not sent [#174]
+- Switched translation to Weblate and removed not translated/less translated lexicon
+
 Login 1.9.9
 ------------------------------------
 - Fix validate email addresses in Register [#143]
