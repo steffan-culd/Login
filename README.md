@@ -7,13 +7,13 @@ updating, registration, and forgot password functionality.
 
 ## Translations
 Translations of the package can be made for
-the [Default Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-imageplus-standard/),
-the [System Setting Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-imageplus-system-settings/), 
-the [Change Password Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-imageplus-system-settings/), 
-the [Forgot Password Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-imageplus-system-settings/), 
-the [Profile Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-imageplus-system-settings/), 
-the [Properties Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-imageplus-system-settings/), 
-the [reCAPTCHA Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-imageplus-system-settings/), 
-the [Register Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-imageplus-system-settings/), 
-the [Setting Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-imageplus-system-settings/) and
-the [Update Profile Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-imageplus-system-settings/) 
+the [Default Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-login-standard/),
+the [System Setting Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-login-system-settings/), 
+the [Change Password Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-login-system-settings/), 
+the [Forgot Password Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-login-system-settings/), 
+the [Profile Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-login-system-settings/), 
+the [Properties Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-login-system-settings/), 
+the [reCAPTCHA Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-login-system-settings/), 
+the [Register Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-login-system-settings/), 
+the [Setting Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-login-system-settings/) and
+the [Update Profile Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-login-system-settings/) 
