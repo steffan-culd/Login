@@ -176,11 +176,10 @@ class Login {
         $this->modx->mail->setHTML(true);
         if ($this->inTestMode) return true;
         $sent = $this->modx->mail->send();
-        $this->modx->mail->reset();
-
         if (!$sent) {
             $this->modx->log(modX::LOG_LEVEL_ERROR, '[Login] '.$this->modx->lexicon('register.email_not_sent').' '.print_r($this->modx->mail->mailer->ErrorInfo, true));
         }
+        $this->modx->mail->reset();
 
         return $sent;
     }
