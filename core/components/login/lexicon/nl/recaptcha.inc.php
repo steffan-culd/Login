@@ -32,4 +32,3 @@ $_lang['recaptcha.mailhide_no_mcrypt'] = 'Om de reCAPTCHA Mailhide te gebruiken,
 $_lang['recaptcha.mailhide_no_api_key'] = 'Om de reCAPTCHA Mailhide te gebruiken, moet u een public en private key aanvraegn, dat kan op <a href="http://mailhide.recaptcha.net/apikey">http://mailhide.recaptcha.net/apikey</a>';
 $_lang['recaptcha.no_api_key'] = 'Om de reCAPTCHA te gebruiken moet u een API key aanvragen op <a href="http://recaptcha.net/api/getkey">http://recaptcha.net/api/getkey</a>';
 $_lang['recaptcha.no_remote_ip'] = 'Vanwege beveiligingsreden moet u het remote IP toevoegen aan reCAPTCHA';
-
