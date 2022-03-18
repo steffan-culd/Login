@@ -35,4 +35,4 @@ $_lang['login.password_new_confirm'] = 'Confirmez le nouveau mot de passe';
 $_lang['login.password_new'] = 'Nouveau mot de passe';
 $_lang['login.password_no_match'] = 'Les mots de passe ne correspondent pas.';
 $_lang['login.password_old'] = 'Ancien mot de passe';
-$_lang['login.password_too_short'] = 'Le mot de passe est trop court ! Veuillez choisir un mot de passe d\'au moins [[+length]] caractères.';
+$_lang['login.password_too_short'] = 'Le mot de passe est trop court ! Veuillez choisir un mot de passe d’au moins [[+length]] caractères.';

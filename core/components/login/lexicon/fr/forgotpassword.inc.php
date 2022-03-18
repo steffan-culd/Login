@@ -36,9 +36,9 @@ $_lang['login.forgot_password_email_text'] = 'Bonjour [[+username]] <p>,</p>
 <p><strong>mot de passe :</strong> [[+password]]</p>
 <p>si vous n’a pas demandé ce message, veuillez l’ignorer. </p>
 <p>Merci,<br />
-<em>[[++site_name]] l\'Administration du Site</em></p>';
+<em>[[++site_name]] l’Administration du Site</em></p>';
 $_lang['login.or_forgot_username'] = 'Oublié votre identifiant ?';
 $_lang['login.reset_password'] = 'Réinitialiser le mot de passe';
 $_lang['login.username'] = 'Identifiant';
-$_lang['login.user_err_nf_email'] = 'Si l\'utilisateur ou le courrier électronique existe, vous recevrez un courriel sous peu.';
-$_lang['login.user_err_nf_username'] = 'Si l\'utilisateur ou le courrier électronique existe, vous recevrez un courriel sous peu.';
+$_lang['login.user_err_nf_email'] = 'Si l’utilisateur ou le courrier électronique existe, vous recevrez un courriel sous peu.';
+$_lang['login.user_err_nf_username'] = 'Si l’utilisateur ou le courrier électronique existe, vous recevrez un courriel sous peu.';
