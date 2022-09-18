@@ -25,15 +25,13 @@
  * @package login
  * @subpackage processors
  */
-$isMODX3 = $this->getVersionData()['version'] >= 3;
-if ($isMODX3) {
-    abstract class DynamicBaseSecurityLoginProcessor extends \MODX\Revolution\Processors\Security\Login {}
-} else {
+if (file_exists(MODX_CORE_PATH.'model/modx/processors/security/login.class.php')) {
     require_once MODX_CORE_PATH.'model/modx/processors/security/login.class.php';
-    abstract class DynamicBaseSecurityLoginProcessor extends modSecurityLoginProcessor {}
+} elseif (!class_exists('modSecurityLoginProcessor')) {
+    class_alias(\MODX\Revolution\Processors\Security\Login::class, \modSecurityLoginProcessor::class);
 }
 
-class CustomLoginProcessor extends DynamicBaseSecurityLoginProcessor {
+class CustomLoginProcessor extends modSecurityLoginProcessor {
 
     /**
      * {@inheritDoc}
