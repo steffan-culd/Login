@@ -1,6 +1,11 @@
 Changelog for Login
 ===================
 
+Login 1.9.11
+------------------------------------
+- Fix ensurePasswordStrength [#181]
+- Fix loginViaEmail for MODX 3 [#179]
+
 Login 1.9.10
 ------------------------------------
 - Log error if mail was not sent [#174]
