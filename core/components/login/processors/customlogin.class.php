@@ -25,7 +25,11 @@
  * @package login
  * @subpackage processors
  */
-require_once MODX_CORE_PATH.'model/modx/processors/security/login.class.php';
+if (file_exists(MODX_CORE_PATH.'model/modx/processors/security/login.class.php')) {
+    require_once MODX_CORE_PATH.'model/modx/processors/security/login.class.php';
+} elseif (!class_exists('modSecurityLoginProcessor')) {
+    class_alias(\MODX\Revolution\Processors\Security\Login::class, \modSecurityLoginProcessor::class);
+}
 
 class CustomLoginProcessor extends modSecurityLoginProcessor {
 
