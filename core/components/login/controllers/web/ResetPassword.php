@@ -41,7 +41,7 @@ class LoginResetPasswordController extends LoginController {
             'tplType' => 'modChunk',
             'changePasswordTpl' => 'lgnResetPassChangePassTpl',
             'changePasswordTplType' => 'modChunk',
-            'changePasswordSubmitVar' => 'logcp-submit',
+            'submitVar' => 'logcp-submit',
             'fieldConfirmNewPassword' => 'password_new_confirm',
             'fieldNewPassword' => 'password_new',
             'errTpl' => 'lgnErrTpl',
@@ -204,7 +204,7 @@ class LoginResetPasswordController extends LoginController {
      * @return void
      */
     public function removeSubmitVar() {
-        $submitVar = $this->getProperty('changePasswordSubmitVar','logcp-submit');
+        $submitVar = $this->getProperty('submitVar','logcp-submit');
         if (!empty($submitVar)) {
             $this->dictionary->remove($submitVar);
         }
