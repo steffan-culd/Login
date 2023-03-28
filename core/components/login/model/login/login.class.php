@@ -158,28 +158,35 @@ class Login {
             $msgAlt = $this->getChunk($properties['tplAlt'],$properties,$properties['tplType']);
         }
 
-
-        $this->modx->getService('mail', 'mail.modPHPMailer');
-        $this->modx->mail->set(modMail::MAIL_BODY, $msg);
-        $this->modx->mail->set(modMail::MAIL_FROM, $this->modx->getOption('emailFrom', $properties, $this->modx->getOption('emailsender'), true));
-        $this->modx->mail->set(modMail::MAIL_FROM_NAME, $this->modx->getOption('emailFromName', $properties, $this->modx->getOption('site_name'), true));
-        $this->modx->mail->set(modMail::MAIL_SENDER, $this->modx->getOption('emailSender', $properties, $this->modx->getOption('emailsender'), true));
-        $this->modx->mail->set(modMail::MAIL_SUBJECT, $subject);
+        
+        if (!$this->modx->services->has('mail')) {
+			$this->modx->services->add('mail', new modPHPMailer($modx));
+		}
+		$mail = $this->modx->services->get('mail');
+		
+		
+		
+        $mail->set(modMail::MAIL_BODY, $msg);
+		
+        $mail->set(modMail::MAIL_FROM, $this->modx->getOption('emailFrom', $properties, $this->modx->getOption('emailsender'), true));
+        $mail->set(modMail::MAIL_FROM_NAME, $this->modx->getOption('emailFromName', $properties, $this->modx->getOption('site_name'), true));
+        $mail->set(modMail::MAIL_SENDER, $this->modx->getOption('emailSender', $properties, $this->modx->getOption('emailsender'), true));
+        $mail->set(modMail::MAIL_SUBJECT, $subject);
         if (!empty($msgAlt)) {
-            $this->modx->mail->set(modMail::MAIL_BODY_TEXT, $msgAlt);
+            $mail->set(modMail::MAIL_BODY_TEXT, $msgAlt);
         }
-        $this->modx->mail->address('to', $email, $name);
+        $mail->address('to', $email, $name);
         $replyTo = $this->modx->getOption('emailReplyTo', $properties);
         if (!empty($replyTo)) {
-            $this->modx->mail->address('reply-to', $replyTo);
+            $mail->address('reply-to', $replyTo);
         }
-        $this->modx->mail->setHTML(true);
+        $mail->setHTML(true);
         if ($this->inTestMode) return true;
-        $sent = $this->modx->mail->send();
+        $sent = $mail->send();
         if (!$sent) {
             $this->modx->log(modX::LOG_LEVEL_ERROR, '[Login] '.$this->modx->lexicon('register.email_not_sent').' '.print_r($this->modx->mail->mailer->ErrorInfo, true));
         }
-        $this->modx->mail->reset();
+        $mail->reset();
 
         return $sent;
     }
